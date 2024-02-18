@@ -1,0 +1,39 @@
+body{
+    margin: 0px;
+}
+
+.header{
+    background-color: black;
+    /* background-color: yellow; */
+    /* min-height: 0px; */
+    width: 100%;
+    padding: 25px 0px 25px 0px;
+    /* margin: 0px; */
+}
+
+.label1{
+    /* background-color: white; */
+    color: white;
+    font-size: 25px;
+    /* margin: px; */
+    
+    
+}
+
+.fa{
+    color: white;
+    margin: 10px;
+}
+
+.header-select{
+    color: white;
+    background-color: black;
+    font-size: 20px;
+    margin: 0px 40px 0px 0px;
+}
+
+button{
+    height: 50px;
+    width: 180px;
+    border-radius: 40px;
+}

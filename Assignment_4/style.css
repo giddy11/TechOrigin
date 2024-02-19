@@ -1,0 +1,124 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+
+body {
+    margin: 0px;
+}
+
+.header{
+    background-color: rgb(96,156,164);
+    padding: 20px 10px 30px 10px;
+    display: flex;
+    justify-content: space-between;
+}
+
+a {
+    text-decoration: none;
+}
+
+.header-left-text {
+    color: white;
+}
+
+.header-right-content {
+    display: flex;
+    /* gap: 20px; */
+}
+
+button {
+    background-color: rgb(96,156,164);
+    border-color: white;
+    color: white;
+    width: 100px;
+    height: 30px;
+}
+
+.header-right-content-first-btn {
+    border-radius: 5px 0px 0px 5px;
+}
+
+.header-right-content-second-btn {
+    border-radius: 0px 5px 5px 0px;
+}
+
+.div-body {
+    background-color: rgb(13,132,135);
+    height: 110vh;
+}
+
+.div-body-padding {
+    padding-top: 13px;
+}
+
+.div-body-one {
+    background-image: url("beautiful.jpg");
+    background-repeat: no-repeat;
+    background-position: right;
+    background-size: 100%;
+    /* width: 1000px; */
+    height: 400px;
+    /* object-fit: contain; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: black;
+    /* font-family: 'Courier New', Courier, monospace; */
+}
+
+.div-body-two {
+    margin-top: 15px;
+}
+
+.div-body-two-hr {
+    margin-top: 0px;
+}
+
+.div-body-three {
+    display: flex;
+    gap: 30px;
+    padding: 30px 0px 30px 20px;
+}
+
+.div-body-three-paris {
+    background-image: url("paris.jpg");
+    background-repeat: no-repeat;
+    background-position: right;
+    /* background-size: 100%; */
+    width: 520px;
+    height: 300px;
+    /* object-fit: contain; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: black;
+    /* font-family: 'Courier New', Courier, monospace; */
+}
+
+.div-body-three-amsterdam {
+    background-image: url("amsterdam.webp");
+}
+
+.div-body-three-san {
+    background-image: url("paris.jpg");
+}
+
+.font-backg {
+    background-color: black;
+    color: white;
+    width: auto;
+    height: auto;
+    font-size: 30px;
+}
+
+.div-body-one-text {
+    font-size: 30px;
+    font-weight: bold;
+}
+
+
+
+/* @media(max-width: 1614px) {
+    .div-body-three {
+        display: block;
+        
+    }
+} */

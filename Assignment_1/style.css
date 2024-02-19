@@ -21,16 +21,31 @@ body{
     display: flex;
 }
 
-.header-text {
-    color: white;
-    font-size: 30px;
-    margin-top: 15px;
-}
-
-a {
+.header-select-atag {
     text-decoration: none;
     color: white;
     font-size: 12px;
+}
+
+.a {
+    font-size: 30px;
+    margin-top: 15px;
+
+}
+
+.header-icons-atag {
+    text-decoration: none;
+    color: white;
+    font-size: 12px;
+}
+
+.icons-right-atag {
+    text-decoration: none;
+    color: rgb(115,181,249);
+}
+
+.div-body-icons-text {
+    color: white;
 }
 
 .icons-right {
@@ -38,7 +53,7 @@ a {
     font-size: 10px;
     margin-top: 15px;
     display: flex;
-    gap: 10px;
+    gap: 30px;
 }
 
 .header-select{
@@ -50,17 +65,72 @@ a {
 }
 
 button{
-    height: 50px;
+    height: 40px;
     width: 180px;
     border-radius: 40px;
     margin-left: 20px;
     margin-right: 20px;
     font-weight: bold;
+    color: white;
+    background-color: rgb(115,181,249);
 }
 
+.div-about {
+    background-color: rgb(79,30,137);
+    text-align: center;
+    font-size: 30px;
+    color: white;
+    font-family: "Special Elite", system-ui;
+    /* height: 10vh; */
+    padding: 10px 0px 30px 0px;
+}
 
+.about-atag {
+    text-decoration: none;
+    color: white;
+}
 
-@media(max-width: 700px) {
+.div-body {
+    background-color: rgb(106,53,161);
+    display: flex;
+    padding: 40px 0px 40px 90px;
+}
+
+.div-body-image-size {
+    width: 700px;
+    height: 600px;
+}
+
+.div-body-text {
+    color: white;
+    margin-left: 30px;
+    margin-top: 15px;
+    font-size: 30px;
+}
+
+.div-body-text-one {
+    font-size: 25px;
+}
+
+.div-body-text-list {
+    margin-top: 30px;
+}
+
+.div-body-text-header1 {
+    margin-top: 0px;
+    font-family: "Kode Mono", monospace;
+}
+
+.div-body-icons {
+    margin-left: 30px;
+    margin-top: 70px;
+}
+
+.footer {
+    padding: 34px 0px 40px 0px;
+}
+
+@media(max-width: 1119px) {
     .header-right-content {
         display: block;
     }
@@ -87,5 +157,25 @@ button{
         display: block;
     }
 
-    
+    .div-body {
+        background-color: rgb(106,53,161);
+        display: block;
+    }
+
+    .div-body-text {
+        color: white;
+        margin: 0px 0px 0px 0px;
+    }
+
+    .div-body-icons {
+        margin-left: 0px;
+        margin-top: 30px;
+    }
+}
+
+@media(max-width: 801px) {
+    .div-body-image-size {
+        width: 180px;
+        height: 180px;
+    }
 }

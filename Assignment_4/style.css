@@ -42,7 +42,7 @@ button {
 
 .div-body {
     background-color: rgb(13,132,135);
-    height: 110vh;
+    height: 210vh;
 }
 
 .div-body-padding {
@@ -51,7 +51,7 @@ button {
 
 .div-body-one {
     background-image: url("beautiful.jpg");
-    background-repeat: no-repeat;
+    background-repeat: no-repeat; 
     background-position: right;
     background-size: 100%;
     /* width: 1000px; */
@@ -73,6 +73,8 @@ button {
 }
 
 .div-body-three {
+    overflow: auto;
+    width: 100%;
     display: flex;
     gap: 30px;
     padding: 30px 0px 30px 20px;
@@ -81,10 +83,10 @@ button {
 .div-body-three-paris {
     background-image: url("paris.jpg");
     background-repeat: no-repeat;
-    background-position: right;
-    /* background-size: 100%; */
+    /* background-position: right; */
+    background-size: 100%;
     width: 520px;
-    height: 300px;
+    height: 400px;
     /* object-fit: contain; */
     display: flex;
     justify-content: center;
@@ -121,4 +123,14 @@ button {
         display: block;
         
     }
+} */
+
+/* .div-body-three {
+    width: 100%;
+    overflow: auto;
+} */
+
+/* .div-body-three {
+    width: 33%;
+    float: left;
 } */

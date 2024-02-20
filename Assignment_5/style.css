@@ -11,13 +11,10 @@ body {
 }
 
 .div-form {
-    /* background-color: rgb(231,230,255); */
     background-color: rgb(50,66,91);
-    /* background-color: pink; */
     width: 30%;
-    height: 50vh;
+    height: 60vh;
     padding: 40px;
-    /* margin: 200px 0px 0px 600px; */
     border-radius: 30px;
 }
 
@@ -41,7 +38,6 @@ body {
 
 .input-prop {
     height: 43px;
-    /* width: 90%; */
     min-width: 90%;
     padding: 0px 0px 0px 20px;
     border-radius: 0px 6px 6px 0px;
@@ -59,17 +55,48 @@ button {
 
 @media(max-width: 1217px) {
     .div-form {
-        padding: 20px;
+        width: 30%;
+        height: 35vh;
+        padding: 40px;
     }
 }
 
-/*
-@media(max-width: 755px) {
+@media (max-width: 1217px) {
     .div-form {
         width: 30%;
-        height: 50vh;
-        padding: 40px;
-        margin: 200px 0px 0px 100px;
+        height: 73vh;
+        padding: 40px 40px 0px 6px;
         border-radius: 30px;
     }
-} */
+}
+
+/* @media screen and (max-width: 900px) and (min-width: 600px), (min-width: 1100px) {
+    div.example {
+      font-size: 50px;
+      padding: 50px;
+      border: 8px solid black;
+      background: yellow;
+    }
+  } */
+
+@media(max-width: 489px) {
+    .div-form {
+        width: 30%;
+        height: 67vh;
+        padding: 40px 0px 0px 8px;
+        border-radius: 30px;
+    }    
+
+    .button {
+        width: 96%;
+        height: 5vh;
+        margin-top: -23px;
+    }
+
+    .input-prop {
+        height: 43px;
+        min-width: 56%;
+        padding: 0px 0px 0px 2px;
+        font-size: 8px;
+    }
+}

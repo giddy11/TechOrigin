@@ -14,7 +14,7 @@ body {
     width: 100%;
     height: 10vh;
     background-color: rgb(96,156,164);
-    padding: 0px 10px 0px 10px;
+    padding: 0px 0px 0px 10px;
     /* margin: 0px 0px 0px 0px; */
 }
 
@@ -89,15 +89,24 @@ button {
     background-image: url("./Assignment_4/paris.jpg");
     background-repeat: no-repeat;
     display: flex;
+    justify-content: center;
+    align-items: center;
     width: 100%;
-    background-size: 50% 40vh;
-
+    background-size: 100% 40vh;
 }
 
 .div-body-3-ams {
-
+    background-image: url("./Assignment_4/amsterdam.webp");
+    background-repeat: no-repeat;
+    display: flex;
+    width: 100%;
+    background-size: 100% 40vh;
 }
 
 .div-body-3-san {
-
+    background-image: url("./Assignment_4/sans_fransisco.webp");
+    background-repeat: no-repeat;
+    display: flex;
+    width: 100%;
+    background-size: 100% 40vh;
 }

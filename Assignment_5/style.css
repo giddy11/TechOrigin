@@ -1,7 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
 
 body {
-    /* background-color: rgb(231,230,255); */
     background-color: rgb(143,225,221);
     margin: 0px;
     display: flex;
@@ -51,14 +50,6 @@ button {
     background-color: rgb(87,79,180);
     color: white;
     border: none;
-}
-
-@media(max-width: 1217px) {
-    .div-form {
-        width: 30%;
-        height: 35vh;
-        padding: 40px;
-    }
 }
 
 @media (max-width: 1217px) {

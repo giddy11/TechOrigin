@@ -7,7 +7,6 @@ body{
 .header{
     background-color: black;
     padding: 25px 10px 10px 10px;
-    /* width: 100%; */
     display: flex;
     justify-content: space-between;
 }
@@ -81,7 +80,6 @@ button{
     font-size: 30px;
     color: white;
     font-family: "Special Elite", system-ui;
-    /* height: 10vh; */
     padding: 10px 0px 30px 0px;
 }
 
@@ -142,16 +140,6 @@ button{
         margin-left: 20px;
         margin-right: 20px;
     }
-
-    /* .icons-right {
-        position: absolute;
-        left: 0;
-    }
-
-    .header {
-        height: 10vh;
-    } */
-
 
     .header {
         display: block;

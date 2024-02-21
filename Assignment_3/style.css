@@ -6,16 +6,14 @@ body {
 
 .header{
     background-color: rgb(246,241,248);
-    padding: 5px 10px 30px 10px;
-    /* width: 100%; */
+    padding: 0px 8px 0px 8px;
+    height: 6vh;
     display: flex;
     justify-content: space-between;
-
 }
 
 .header-left-atag {
     color: rgb(218,129,63);
-
 }
 
 a {
@@ -29,14 +27,12 @@ a {
 
 .div-body {
     background-color: rgb(53,111,234);
-    height: 110vh;
-
+    height: 94vh;
 }
 
 .div-body-text {
     color: white;
     padding: 145px 10px 0px 100px;
-
 }
 
 .div-body-text1 {
@@ -76,7 +72,6 @@ a {
 @media(max-width: 588px) {
     .header-right-content {
         display: block;
-        /* gap: 20px; */
     }
 
     .div-body-input-text {

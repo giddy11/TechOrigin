@@ -27,14 +27,6 @@ body{
 
 }
 
-/* label, input, button {
-    display: block;
-}
-
-#remember, .remember {
-    display: inline;
-} */
-
 .inputs  {
     display: block;
 }
@@ -66,8 +58,4 @@ body{
 .cancel-btn {
     width: 70px;
     height: 30px;
-}
-
-@media(max-width: 1036px) {
-    
 }

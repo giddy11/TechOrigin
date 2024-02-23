@@ -53,12 +53,7 @@ a {
     border-color: white;
     font-size: 25px;
     margin-bottom: 10px;
-    display: block;
-}
-
-.div-body-btn {
-    padding: 0px 0px 0px 0px;
-
+    /* display: block; */
 }
 
 .div-body-btn-1 {

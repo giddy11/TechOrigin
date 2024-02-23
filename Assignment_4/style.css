@@ -79,9 +79,10 @@ button {
 
 .div-body-3 {
     display: flex;
+    
     height: 40vh;
-    gap: 20px;
-    padding: 10px 20px 0px 20px;
+    /* gap: 20px; */
+    /* padding: 10px 20px 0px 20px; */
 }
 
 .div-body-3-paris {

@@ -14,7 +14,7 @@ body{
     margin-top: 0px;
     display: flex;
     justify-content: center;
-    padding: 30px 0px 30px 0px;    
+    padding: 30px 0px 30px 0px;  
 }
 
 .log-in-details {
@@ -22,13 +22,6 @@ body{
     height: 68vh;
     margin: 10px;
     padding: 40px 0px 0px 40px;
-    display: block;
-    
-
-}
-
-.inputs  {
-    display: block;
 }
 
 .alignment {
@@ -42,10 +35,7 @@ body{
     border-style:double;
     font-size: 25px;
     padding-left: 20px;
-}
-
-.label-name {
-    margin: 0px 0px 10px 0px;
+    margin-top: 5px;
 }
 
 .login-btn {
@@ -56,6 +46,6 @@ body{
 }
 
 .cancel-btn {
-    width: 70px;
+    width: fit-content;
     height: 30px;
 }

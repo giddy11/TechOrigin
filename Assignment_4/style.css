@@ -10,10 +10,10 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    flex-wrap: wrap;
     width: 100%;
     height: 10vh;
     background-color: rgb(96,156,164);
-    /* padding: 0px 0px 0px 10px; */
     padding-left: 10px;
 }
 
@@ -79,10 +79,10 @@ button {
 
 .div-body-3 {
     display: flex;
-    
+    /* justify-content: space-around; */
+    justify-content: space-evenly;
     height: 40vh;
-    /* gap: 20px; */
-    /* padding: 10px 20px 0px 20px; */
+    flex-wrap: wrap;
 }
 
 .div-body-3-paris {
@@ -91,7 +91,7 @@ button {
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 100%;
+    width: 30%;
     background-size: 100% 40vh;
     
 }
@@ -112,8 +112,8 @@ button {
     font-size: 30px;
 }
 
-@media (max-width: 466px) {
+/* @media (max-width: 466px) {
     .header {
         display: block;
     }
-}
+} */

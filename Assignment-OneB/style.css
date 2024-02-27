@@ -1,0 +1,53 @@
+body {
+    margin: 0px;
+}
+
+.container-frame {
+    background-image: url("Material/image_1.jpg");
+    background-size: cover;
+    width: 100%;
+    height: 100vh;
+}
+
+.header {
+    display: flex;
+    justify-content: space-around;
+    padding-top: 60px;
+}
+
+.link-style {
+    /* color: white; */
+    color: red;
+    text-decoration: none;
+}
+
+.frame-style {
+    font-size: 26px;
+    font-weight: 700;
+}
+
+.links-right {
+    display: flex;
+    column-gap: 50px;
+}
+
+.parent {
+    /* margin-top: 250px; */
+    display: flex;
+    justify-content: center;
+    /* align-items: center; */
+    align-items: center;
+}
+
+.parent-text {
+    width: 690px;
+    height: 60px;
+}
+
+.uicookies-style {
+    font-size: 54px;
+    font-weight: 300;
+    color: white;
+    /* line-height: 1.3; */
+}
+

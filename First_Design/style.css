@@ -85,24 +85,28 @@ body {
 }
 
 .body-image-2 {
+
+    position: absolute;
     display: flex;
     justify-content: flex-end;
-    /* position: absolute; */
-    /* justify-content: space-around; */
-}
+    align-items: center;
+    width: 100%;
+    margin-top: 100px;
+   }
 
-.body-image-2-yellow {
-    display: flex;
-    width: 60%;
-    height: 70vh;
-    background-color: #fbffa7;
+   .body-image-2-yellow {
+    background-color: yellow;
+    width: 55%;
+    height: 120vh;
+    margin-right: -700px;
+   }
+
+   .body-image-2 {
+    /* margin-top: 80px; */
     position: absolute;
-    /* align-items: center; */
-    /* justify-content: center; */
-    /* justify-content: space-around; */
-}
-
-
-
-
-
+    display: flex;
+    /* right: 100px; */
+    /* column-gap: 30px; */
+    justify-content: space-evenly;
+    align-items: center;
+   }

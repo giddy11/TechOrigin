@@ -1,0 +1,59 @@
+body {
+    margin: 0px;
+}
+
+.features {
+    background-color: rgb(214,230,242);
+    border: 1px solid green;
+}
+
+.features-child {
+    margin-top: 90px;
+    text-align: center;
+    border: 1px solid red;
+    /* justify-content: center; */
+    /* justify-self: center; */
+    /* align-items: center; */
+    /* align-content: center; */
+}
+
+hr {
+    width: 20px;
+}
+
+.features-parag {
+    display: flex;
+    word-wrap: break-word;
+    border: 1px solid yellow;
+    justify-content: center;
+}
+
+.p-even-all {
+    width: 40%;
+}
+
+.img-showcase {
+    width: 40%;
+}
+
+.first-image {
+    display: flex;
+    padding: 100px 0px;
+    /* justify-content: space-between; */
+    justify-content: center;
+    column-gap: 100px;
+    line-height: 1.4;
+}
+
+ul {
+    list-style-type: square;
+}
+
+.big-benefit {
+    width: 20%;
+}
+
+.big-benefit-heading-3 {
+    font-size: 36px;
+    color: #1a57a5;
+}

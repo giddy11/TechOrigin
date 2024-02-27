@@ -1,0 +1,152 @@
+body {
+    margin: 0px;
+}
+
+.container-frame {
+    background-image: url("Material/image_1.jpg");
+    width: 100%;
+    height: 90vh;
+}
+
+.container-frame::before {
+    width: 100%;
+    height: 90%;
+    content: "";
+    position: absolute;
+    background: rgba(0, 0, 0, .5);
+}
+
+.nav-bar {
+    display: flex;
+    justify-content: space-around;
+    padding-top: 60px;
+    /* border: 1px solid red; */
+    position: relative;
+}
+
+.link-style {
+    color: rgba(255, 255, 255);
+    text-decoration: none;
+}
+
+.link-style:hover {
+    color: rgba(255, 255, 255, .8);
+}
+
+.frame-style {
+    font-size: 26px;
+    font-weight: 700;
+}
+
+.links-right {
+    display: flex;
+    column-gap: 50px;
+}
+
+.parent {
+    display: block;
+    align-items: center;
+    text-align: center;
+    /* border: 1px solid red; */
+    height: 400px;
+    width: 50%;
+    position: absolute;
+    top: 30%;
+    left: 25%;
+    /* transform: translate(-50%, -50%); */
+}
+
+.parent-text {
+    margin-bottom: 80px;
+}
+
+.aligh_self {
+    display: flex;
+    justify-self: center;
+    align-self: center;
+}
+
+.uicookies-style {
+    font-size: 54px;
+    font-weight: 300;
+    color: white;
+    line-height: 1.3;
+}
+
+.btn-get {
+    background-color: rgb(16,52,99);
+    padding: 20px 40px;
+    margin-right: 10px;
+    border: #ccc;
+    font-size: 16px;
+    color: white;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.btn-get:hover {
+    background-color: rgb(16,52,99, .6);
+
+}
+
+.btn-see {
+    background: 0 0;
+    color: white;
+    border: 2px solid rgba(255, 255, 255, .9);;
+}
+
+.btn-see:hover {
+    background-color: rgba(255, 255, 255, .2); 
+}
+
+.service-container{
+    margin-top: 120px;
+    display: grid;
+    grid-template-columns: 20% 20% 20%;
+    column-gap: 50px;
+    justify-content: center;
+    /* border: 1px solid red; */
+    height: 400px;
+}
+
+.child-comp{
+    display: block;
+    background-color: white;
+    /* border: 1px solid red; */
+}
+
+.far-far-style {
+    word-wrap: break-word;
+    font-size: 16px;
+    color: #73767c;
+    line-height: 1.7;
+    margin-bottom: 30px;
+}
+
+.header-style {
+    font-size: 24px;
+    color: rgb(61,113,179);
+    word-wrap: break-word;
+    margin-bottom: 30px;
+
+}
+
+.learn_more_style {
+    font-size: 16px;
+    color: #1a57a5;
+    text-decoration: none;
+}
+
+.fa-icon-style {
+    
+    background: white;
+    color: rgb(61,113,179);
+    margin-bottom: 30px;
+
+}
+
+.fa-chevron-right {
+    color: rgb(61,113,179);
+    font-size: 10px;
+    margin-left: 3px;
+}

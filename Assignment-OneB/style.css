@@ -4,14 +4,14 @@ body {
 
 .container-frame {
     background-image: url("Material/image_1.jpg");
-<<<<<<< HEAD
     width: 100%;
-    height: 90vh;
+    height: 100vh;
+    position: relative;
 }
 
 .container-frame::before {
     width: 100%;
-    height: 90%;
+    height: 100%;
     content: "";
     position: absolute;
     background: rgba(0, 0, 0, .5);
@@ -22,7 +22,6 @@ body {
     justify-content: space-around;
     padding-top: 60px;
     /* border: 1px solid red; */
-    position: relative;
 }
 
 .link-style {
@@ -34,12 +33,6 @@ body {
     color: rgba(255, 255, 255, .8);
 }
 
-=======
-    background-size: cover;
-    width: 100%;
-    height: 100vh;
-}
-
 .header {
     display: flex;
     justify-content: space-around;
@@ -47,12 +40,11 @@ body {
 }
 
 .link-style {
-    /* color: white; */
-    color: red;
+    color: white;
+    /* color: red; */
     text-decoration: none;
 }
 
->>>>>>> 091c5717194c9d47f2849e76543f9c7ed524293b
 .frame-style {
     font-size: 26px;
     font-weight: 700;
@@ -64,7 +56,6 @@ body {
 }
 
 .parent {
-<<<<<<< HEAD
     display: block;
     align-items: center;
     text-align: center;
@@ -85,7 +76,6 @@ body {
     display: flex;
     justify-self: center;
     align-self: center;
-=======
     /* margin-top: 250px; */
     display: flex;
     justify-content: center;
@@ -96,15 +86,17 @@ body {
 .parent-text {
     width: 690px;
     height: 60px;
->>>>>>> 091c5717194c9d47f2849e76543f9c7ed524293b
 }
 
 .uicookies-style {
     font-size: 54px;
     font-weight: 300;
     color: white;
-<<<<<<< HEAD
     line-height: 1.3;
+}
+
+.get_them_now-btns {
+    margin-top: 200px;
 }
 
 .btn-get {
@@ -140,12 +132,13 @@ body {
     column-gap: 50px;
     justify-content: center;
     /* border: 1px solid red; */
-    height: 400px;
+    /* height: 100px; */
 }
 
 .child-comp{
     display: block;
     background-color: white;
+    height: 40vh;
     /* border: 1px solid red; */
 }
 
@@ -184,8 +177,85 @@ body {
     font-size: 10px;
     margin-left: 3px;
 }
-=======
-    /* line-height: 1.3; */
+
+/* THird Section */
+
+.features {
+    background-color: rgb(214,230,242);
+    margin-top: 150px;
+    /* border: 1px solid green; */
 }
 
->>>>>>> 091c5717194c9d47f2849e76543f9c7ed524293b
+.h3-style {
+    font-size: 50px;
+}
+
+.features-child {
+    margin-top: 90px;
+    padding-top: 30px;
+    text-align: center;
+    /* border: 1px solid red; */
+}
+
+hr {
+    width: 70px;
+    height: 2px;
+    margin-top: -20px;
+    background: #1a57a5;
+}
+
+.features-parag {
+    display: flex;
+    word-wrap: break-word;
+    /* border: 1px solid yellow; */
+    justify-content: center;
+}
+
+.p-even-all {
+    width: 40%;
+    color: #73767c;
+    line-height: 1.7;
+}
+
+.img-showcase {
+    width: 40%;
+}
+
+.first-image {
+    display: flex;
+    padding: 100px 0px;
+    /* justify-content: space-between; */
+    justify-content: center;
+    column-gap: 100px;
+    line-height: 1.4;
+}
+
+
+ul {
+    list-style-type: square;
+}
+
+.big-benefit {
+    width: 50%;
+}
+
+.big-benefit-self {
+    padding-left: 200px;
+}
+
+.shadow-img-self {
+    padding-right: 100px;
+}
+
+.big-benefit-heading-3 {
+    font-size: 36px;
+    color: #1a57a5;
+}
+
+.first-image-self {
+    padding-bottom: 170px;
+}
+
+.shadow-img {
+    box-shadow: 0 20px 45px -10px rgba(0,0,0,.15);
+}

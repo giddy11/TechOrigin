@@ -475,3 +475,22 @@ ul {
     font-size: 18px;
     padding-left: 10px;
 }
+
+/* Sixth Section */
+.join-over {
+    background: #1a57a5;
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    text-align: center;
+}
+
+.join-header-style {
+    font-size: 30px;
+    font-family: "Open Sans", Arial, sans-serif;
+
+}
+
+.join-over-text {
+    width: 40%;
+}

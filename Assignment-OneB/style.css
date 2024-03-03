@@ -478,19 +478,93 @@ ul {
 
 /* Sixth Section */
 .join-over {
+    padding-top: 1px;
+    padding-bottom: 35px;
     background: #1a57a5;
-    display: flex;
-    flex-direction: column;
-    /* justify-content: center; */
     text-align: center;
 }
 
 .join-header-style {
     font-size: 30px;
+    padding-top: 30px;
+    color: white;
     font-family: "Open Sans", Arial, sans-serif;
+    /* border: 1px solid green; */
+    
 
 }
 
 .join-over-text {
-    width: 40%;
+    /* border: 1px solid red; */
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.join-over-text-style {
+    /* border: 1px solid yellow; */
+    width: 60%;
+    margin-top: 0px;
+    color: #ffffffb3;
+    font-family: "Open Sans", Arial, sans-serif;
+    line-height: 1.7;
+}
+
+/* Seventh Section */
+
+.contact {
+    margin-top: 100px;
+    display: grid;
+    /* border: 1px solid green; */
+    grid-template-columns: 35% 35%;
+    column-gap: 70px;
+    justify-content: center;
+    padding-bottom: 200px;
+}
+
+.get-in-touch {
+    /* border: 1px solid red; */
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    row-gap: 10px;
+    text-align: center;
+    box-shadow: 0 20px 45px -10px rgba(0,0,0,.15);
+}
+
+.email {
+    /* border: 1px solid yellow; */
+    display: flex;
+    flex-direction: column;
+    row-gap: 50px;
+}
+
+.input-style {
+    width: 80%;
+    height: 46px;
+    padding-left: 10px;
+}
+
+.btn-align-left {
+    display: flex;
+}
+
+.div-btn {
+    padding-left: 48px;
+    padding-bottom: 30px;
+}
+
+.txt-area-style {
+    width: 80%;
+    padding-left: 10px;
+}
+
+.email-span {
+    color: #0000004d;
+}
+
+.email-li-style {
+    margin-top: 10px;
+    list-style-type: none;
+    color: #73767c;
 }

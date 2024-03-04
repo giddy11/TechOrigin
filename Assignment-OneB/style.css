@@ -13,7 +13,7 @@ body {
 .container-frame::before {
     width: 100%;
     height: 100%;
-    content: "";
+    content: "ffff";
     position: absolute;
     background: rgba(0, 0, 0, .5);
 }
@@ -22,10 +22,16 @@ body {
     display: flex;
     justify-content: space-around;
     padding-top: 60px;
-    /* border: 1px solid red; */
-    position: sticky;
-    top: 0px;
-    left: 0px;
+    border: 1px solid red;
+    position: fixed !important;
+    width: 100%;
+    z-index: 9999;
+    top: 0;
+    /* left: 0px; */
+}
+
+.nav-bar.scrolled {
+    background-color: #fff;
 }
 
 .link-style {
@@ -74,6 +80,9 @@ body {
 
 .parent-text {
     margin-bottom: 80px;
+    width: 100%;
+    height: 60px;
+
 }
 
 .aligh_self {
@@ -85,11 +94,6 @@ body {
     justify-content: center;
     /* align-items: center; */
     align-items: center;
-}
-
-.parent-text {
-    width: 690px;
-    height: 60px;
 }
 
 .uicookies-style {
@@ -550,7 +554,7 @@ ul {
 }
 
 .div-btn {
-    padding-left: 48px;
+    padding-left: 59px;
     padding-bottom: 30px;
 }
 
@@ -567,4 +571,60 @@ ul {
     margin-top: 10px;
     list-style-type: none;
     color: #73767c;
+}
+
+/* Footer */
+.div-footer {
+    border: 1px solid red;
+    background: #1a57a5;
+    /* display: flex;
+    flex-direction: column;
+    justify-content: center; */
+}
+
+.div-footer-icons {
+    border: 1px solid yellow;
+    display: flex;
+    justify-content: center;
+    column-gap: 30px;
+    padding-top: 50px;
+    margin-bottom: 20px;
+
+}
+
+.icon-style {
+    color: rgba(255, 255, 255, .4);
+    cursor: pointer;
+    transition: color 0.5s;
+}
+
+.icon-style:hover {
+    color: rgba(255, 255, 255, .9);
+}
+
+.div-footer-text-style {
+    font-size: 16px;
+    font-family: "Open Sans", Arial, sans-serif;
+    color: white;
+}
+
+a {
+    text-decoration: none;
+    transition: color 0.5s;
+    
+}
+
+.bootstrap-unsplash:hover {
+    color: rgba(255, 255, 255, .9);
+}
+
+.bootstrap-unsplash {
+    color: rgba(255, 255, 255, .4);
+}
+
+.div-footer-text {
+    margin-bottom: 40px;
+    padding-top: 20px;
+    border: 1px solid green;
+    text-align: center;
 }

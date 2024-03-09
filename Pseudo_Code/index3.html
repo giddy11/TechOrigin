@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <title>Document</title>
+</head>
+<style>
+    .Parent-div {
+        background-color: white;
+        width: fit-content;
+        /* cursor: pointer; */
+    }
+
+    .bar {
+        cursor: pointer;
+        position: absolute;
+        left: 30px;
+    }
+    
+    .menu-container {
+        background-color: black;
+        color: white;
+        padding: 10px;
+        display: none;
+    }
+
+    #Parent-div:hover + .menu-container {
+        display: block;
+    }
+</style>
+
+<!-- <style>
+    .Parent-div {
+        background-color: white;
+        width: fit-content;
+        cursor: pointer;
+    }
+
+    .bar {
+        display: none; /* Hide the checkbox */
+    }
+    
+    .menu-container {
+        background-color: black;
+        color: white;
+        padding: 10px;
+        display: none;
+    }
+
+    .bar:checked + .menu-container {
+        display: block;
+    }
+</style> -->
+<body>
+    <div class="Parent-div">
+        <i class="fa-solid fa-bars bar"></i>
+        <input type="checkbox" id="checkbox">
+        <div class="menu-container">
+            <div>Technology 1</div>
+            <div>Technology 2</div>
+            <div>Technology 3</div>
+            <div>Technology 4</div>
+        </div>
+    </div>
+
+    <!-- <div class="Parent-div">
+        <input class="bar" type="checkbox" id="checkbox">
+        <i class="fa-solid fa-bars"></i>
+        <label for="checkbox">Menu</label>
+        <div class="menu-container">
+            <div>Technology 1</div>
+            <div>Technology 2</div>
+            <div>Technology 3</div>
+            <div>Technology 4</div>
+        </div>
+    </div> -->
+</body>
+</html>

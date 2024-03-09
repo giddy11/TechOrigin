@@ -26,7 +26,15 @@
         display: none;
     }
 
+    #checkbox {
+        display: none;
+    }
+
     #Parent-div:hover + .menu-container {
+        display: block;
+    }
+
+    #checkbox:checked + .Parent-div .menu-container {
         display: block;
     }
 </style>
@@ -54,9 +62,14 @@
     }
 </style> -->
 <body>
+    <input type="checkbox" id="checkbox">
     <div class="Parent-div">
-        <i class="fa-solid fa-bars bar"></i>
-        <input type="checkbox" id="checkbox">
+        <label for="checkbox">
+            <i class="fa-solid fa-bars bar"></i>
+        </label>
+        <br>
+        <br>
+
         <div class="menu-container">
             <div>Technology 1</div>
             <div>Technology 2</div>

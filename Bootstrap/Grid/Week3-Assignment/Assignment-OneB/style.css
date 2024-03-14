@@ -30,6 +30,10 @@ section {
     background-color: lightgray;
 }
 
+.bg-none {
+    background: none;
+}
+
 .mb-10 {
     margin-bottom: 150px;
 }

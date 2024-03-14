@@ -22,15 +22,16 @@
     flex-grow: 0 !important;
 }
 
-@media(max-width: 990px) {
-    .container-fluid {
-        background-color: white;
-        justify-content: space-between;
-    }
+section {
+    padding: 60px 0;
+}
 
-    .frame-style {
-        color: #1a57a5;
-    }
+.bg-lightgray {
+    background-color: lightgray;
+}
+
+.mb-10 {
+    margin-bottom: 150px;
 }
 
  /* First-Section */

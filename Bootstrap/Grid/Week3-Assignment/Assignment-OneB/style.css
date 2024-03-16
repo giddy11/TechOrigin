@@ -10,7 +10,7 @@ section {
 
 /* Border format */
 
-.bg-lightgray {
+/* .bg-lightgray {
     background-color: lightgray;
 }
 
@@ -40,7 +40,9 @@ section {
 
 .bg-none {
     background: none;
-}
+} */
+
+/* Colors */
 
 .c-red {
     color: red;
@@ -50,9 +52,37 @@ section {
     color: rgb(61,113,179);
 }
 
+/* Margins */
+.mb-9 {
+    margin-bottom: 100px;
+}
+
 .mb-10 {
     margin-bottom: 150px;
 }
+
+.mt-10 {
+    margin-top: 120px !important;
+}
+
+.ms-9 {
+    margin-left: -12px;
+}
+
+/* Paddings */
+
+.ps-12 {
+    padding-left: 6rem !important;
+}
+
+.ps-xl-12 {
+    padding-left: 6rem !important;
+}
+
+/* .ps-lg-0 {
+    padding-left: 0 !important;
+} */
+
 
 .btn-lg {
     padding: 20px 30px !important;
@@ -89,6 +119,30 @@ section {
     position: absolute;
     background: rgba(0, 0, 0, .5);
 }
+
+/* @media (max-width: 329px) {
+    .container-frame::before {
+        height: 110vh;
+    }
+
+    .container-frame {
+        height: 110vh;
+    }
+
+    .container-frame {
+        margin-bottom: 20px;
+    }
+
+    .nav-link {
+        color: red !important;
+    }
+} */
+
+/* @media (max-width: 329px) {
+    .nav-link {
+        color: blue !important;
+    }
+} */
 
 /* Issues with my nav-bar. come back here to improve on it */
 
@@ -128,4 +182,12 @@ section {
 
 .btn-see:hover {
     background-color: rgba(255, 255, 255, .2); 
+}
+
+.ms-9 {
+    margin-left: -12px;
+}
+
+.ps-12 {
+    padding-left: 6rem !important;
 }

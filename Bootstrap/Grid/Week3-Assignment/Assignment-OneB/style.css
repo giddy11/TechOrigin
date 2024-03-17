@@ -120,23 +120,24 @@ section {
     background: rgba(0, 0, 0, .5);
 }
 
-/* @media (max-width: 329px) {
+/* This is not responsive for the following phone
+*  iphone5, iPhone SE 2016, Apple Watch Serie 6
+*
+*/
+
+@media (max-width: 400px) {
     .container-frame::before {
-        height: 110vh;
+        height: 140vh;
     }
 
     .container-frame {
-        height: 110vh;
+        height: 140vh;
     }
 
     .container-frame {
         margin-bottom: 20px;
     }
-
-    .nav-link {
-        color: red !important;
-    }
-} */
+}
 
 /* @media (max-width: 329px) {
     .nav-link {

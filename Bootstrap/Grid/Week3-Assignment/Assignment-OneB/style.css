@@ -15,7 +15,7 @@ section {
 }
 
 .border-red {
-    border: 1px solid red;
+    border: 2px solid red;
 }
 
 .border-green {
@@ -35,7 +35,7 @@ section {
 }
 
 .border-yellow {
-    border: 1px solid yellow;
+    border: 3px solid yellow;
 }
 
 .bg-none {
@@ -97,12 +97,12 @@ section {
 }
 
 .ps-12 {
-    padding-left: 6rem !important;
+    padding-left: 60px !important;
 }
 
-.ps-xl-12 {
+/* .ps-xl-12 {
     padding-left: 6rem !important;
-}
+} */
 
 /* .ps-lg-0 {
     padding-left: 0 !important;

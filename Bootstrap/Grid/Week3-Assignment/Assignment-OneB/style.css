@@ -240,3 +240,57 @@ section {
 .btn-see:hover {
     background-color: rgba(255, 255, 255, .2); 
 }
+
+/* Footer */
+.div-footer {
+    /* border: 1px solid red; */
+    background: #1a57a5;
+    height: 23vh;
+}
+
+.div-footer-icons {
+    /* border: 1px solid yellow; */
+    display: flex;
+    justify-content: center;
+    column-gap: 30px;
+    padding-top: 50px;
+    margin-bottom: 20px;
+
+}
+
+.icon-style {
+    color: rgba(255, 255, 255, .4);
+    cursor: pointer;
+    transition: color 0.5s;
+}
+
+.icon-style:hover {
+    color: rgba(255, 255, 255, .9);
+}
+
+.div-footer-text-style {
+    font-size: 16px;
+    font-family: "Open Sans", Arial, sans-serif;
+    color: white;
+}
+
+a {
+    text-decoration: none;
+    transition: color 0.5s;
+    
+}
+
+.bootstrap-unsplash:hover {
+    color: rgba(255, 255, 255, .9);
+}
+
+.bootstrap-unsplash {
+    color: rgba(255, 255, 255, .4);
+}
+
+.div-footer-text {
+    margin-bottom: 40px;
+    padding-top: 20px;
+    /* border: 1px solid green; */
+    text-align: center;
+}

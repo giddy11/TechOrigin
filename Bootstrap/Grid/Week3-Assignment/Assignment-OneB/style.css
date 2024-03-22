@@ -3,6 +3,13 @@
     flex-grow: 0 !important;
 }
 
+/* .navbar-1 {
+    background-color: #F79F24;
+    width: 100%;
+    position: fixed !important;
+    z-index: 1000;
+} */
+
 section {
     padding: 60px 0;
     background-color: white;
@@ -106,19 +113,13 @@ section {
     padding-left: 60px !important;
 }
 
-/* .ps-xl-12 {
-    padding-left: 6rem !important;
-} */
+.cookies-selection::selection {
+    background-color: black;
+}
 
-/* .ps-lg-0 {
-    padding-left: 0 !important;
-} */
-
-/* hr {
-    width: 130px !important;
-    color:#1a57a5;
-    height: 5px !important;
-} */
+.card:hover {
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.2);
+}
 
 
 .btn-lg {

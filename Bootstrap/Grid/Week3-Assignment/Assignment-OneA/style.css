@@ -114,3 +114,20 @@ a {
     text-decoration: none !important;
     /* color: black; */
 }
+
+@media (min-width: 992px) {
+    .text-lg-dark {
+        color: black !important;
+    }
+    
+}
+
+@media (max-width: 992px) {
+    .text-lg-dark {
+        color: white !important;
+    }
+
+    .bg-lg-col {
+        background-color: black !important;
+    }
+}

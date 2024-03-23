@@ -1,4 +1,6 @@
 {
     "liveServer.settings.port": 5501,
-    "debug.console.collapseIdenticalLines": true
+    "debug.console.collapseIdenticalLines": true,
+    "editor.guides.indentation": true,
+    "editor.detectIndentation": true
 }

@@ -3,13 +3,6 @@
     flex-grow: 0 !important;
 }
 
-/* .navbar-1 {
-    background-color: #F79F24;
-    width: 100%;
-    position: fixed !important;
-    z-index: 1000;
-} */
-
 section {
     padding: 60px 0;
     background-color: white;

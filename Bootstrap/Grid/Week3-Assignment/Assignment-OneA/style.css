@@ -17,7 +17,7 @@ section {
 
 /* Border format */
 
-.bg-lightgray {
+/* .bg-lightgray {
     background-color: lightgray;
 }
 
@@ -48,7 +48,7 @@ section {
 
 .bg-none {
     background: none;
-}
+} */
 
 /* Colors */
 
@@ -113,6 +113,11 @@ section {
     padding-left: 80px !important;
 }
 
+.ps-9 {
+    padding-left: 230px !important;
+
+}
+
 .ps-12 {
     padding-left: 60px !important;
 }
@@ -146,7 +151,15 @@ a {
     .text-lg-dark {
         color: black !important;
     }
+
+    .mt-lg-minus6 {
+        margin-top: -70px !important;
+    }
     
+}
+
+.no-gutters {
+    margin-right: -1px !important;
 }
 
 @media (max-width: 992px) {

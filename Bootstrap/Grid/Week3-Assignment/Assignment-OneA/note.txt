@@ -1,0 +1,60 @@
+.big-circle {
+        margin-top: 2rem;
+        width: 10rem;
+        height: 10rem;
+        border-radius: 100%;
+        transition: 0.3s;
+
+        & .small-circle-1 {
+            width: 3rem;
+            position: relative;
+            left: 57%;
+            height: 3rem;
+            background-color: #589167;
+            border-radius: 100%;
+            opacity: 80%;
+            transition: 0.3s;
+        }
+
+        & .small-circle-2 {
+            width: 3rem;
+            position: relative;
+            left: 65%;
+            top: -80%;
+            height: 3rem;
+            background-color: #589167;
+            border-radius: 100%;
+            text-align: center;
+            align-content: center;
+            color: white;
+            transition: 0.3s;
+    }
+
+        & .fa-calendar-days{
+            font-size: 70px;
+            left: 30%;
+            top: 30%;
+            position: relative;
+    }
+
+        &:hover {
+
+            & .small-circle-1 {
+                background-color: white;
+                left: 45%;
+                opacity: 90%;
+            }
+
+            & .small-circle-2 {
+                color: #589167;
+                background-color: white;
+            }
+        }
+    }
+
+    .big-circle:hover {
+        background-color: #589167;
+    }
+
+
+    

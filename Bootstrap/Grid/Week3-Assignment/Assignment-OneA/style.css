@@ -102,6 +102,10 @@ body {
     padding-top: 100px;
 }
 
+.pt-lg-15 {
+    padding-top: 300px;
+}
+
 .pb-15 {
     padding-bottom: 100px;
 }
@@ -128,9 +132,7 @@ body {
     padding-left: 60px !important;
 }
 
-.pt-lg-15 {
-    padding-top: 300px;
-}
+
 
 /* font size */
 .fs-minus-1 {
@@ -185,6 +187,26 @@ a {
 
 .no-gutters {
     margin-right: -1px !important;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #589167;
+    opacity: 80%;
+    z-index: 1; /* Ensure the overlay is above the content */
+}
+
+.content {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 2; /* Ensure the content is above the overlay */
 }
 
 .div-card {

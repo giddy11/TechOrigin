@@ -173,6 +173,19 @@ a {
     border-radius: 0px !important;
 }
 
+.btn-pad {
+    padding: 15px 50px !important;
+    border-radius: 0px !important;
+    margin-top: 40px !important;
+    background-color: #589167 !important;
+}
+
+@media (max-width: 576px) {
+    .btn-pad {
+        padding: 10px 10px !important;
+    }
+}
+
 .row {
     --bs-gutter-x: 0 !important;
 }

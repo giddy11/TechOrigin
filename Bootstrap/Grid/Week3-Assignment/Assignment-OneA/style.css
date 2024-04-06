@@ -98,6 +98,10 @@ body {
 
 /* Paddings */
 
+.pt-6 {
+    padding-top: 70px;
+}
+
 .pt-8 {
     padding-top: 100px;
 }
@@ -356,19 +360,18 @@ a {
     flex-wrap: nowrap !important;
 }
 
-/* .small-circle-4 {
-    width: 2rem;
-    position: absolute;
-    left: 10%;
-    top: -5%;
-    height: 2rem;
+.small-circle-5 {
+    width: 3rem;
+    left: 0%;
+    top: 0px;
+    height: 3rem;
     background-color: #589167;
     border-radius: 100%;
     text-align: center;
     align-content: center;
     color: white;
     transition: 0.3s;
-} */
+}
 
 @keyframes pulse {
     0% {

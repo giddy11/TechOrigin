@@ -57,4 +57,62 @@
     }
 
 
+<!-- send a message and get in touch -->
+    <!-- An issue here with responsiveness -->
+    <section style="background: #f5f5f5;">
+        <div class="container-fluid position-relative border-redd">
+            <img src="./Material/bg_2_copy.jpg" alt="" class="img-fluid img-mat img-height border-yellowd" style="height: 50rem;">
+            <div class=" overlay"></div>
+            <div class="position-absolute content border-red container-fluid">
+                <div class="d-flex position-absolute mov gy-4 flex-column border-green" style="width: 40%;">
+                    <h6 class="fs-2 fw-bold text-white">Send a Message & Get in touch!</h6>
+
+                    <div class="border-red row gap-xxl-0 justify-content-xxl-between">
+                        <div class="col-xxl-5 border-green">
+                            <input type="text" placeholder="Your Name" class="fw-bold input-style" style="width:100%;">
+                        </div>
+                        <div class="col-xxl-5 border-yellow d-flex justify-content-end">
+                            <input type="text" placeholder="Your Name" class="fw-bold input-style" style="width:100%;">
+                        </div>
+                    </div>
+
+                    <select>
+                        <option value="">Services</option>
+                        <option value="">Relation Problem</option>
+                        <option value="">Couple Counseling</option>
+                        <option value="">Depression Treatment</option>
+                        <option value="">Family Problem</option>
+                        <option value="">Personal Problem</option>
+                        <option value="">Business Problem</option>
+                    </select>
+
+                    <textarea rows="5" placeholder="Message"></textarea>
+                    <button class="btn btn-lightgreen">Send Message</button>
+                    
+                </div>
+                
+                <!-- <div class=" border-green" style="width: 80%;">
+                    <h6 class="fs-2 fw-bold text-white">Send a Message & Get in touch!</h6>
+                    <div class="d-flex justify-content-between">
+                        <input type="text" placeholder="Your Name" class="fw-bold input-style">
+                        <input type="text" placeholder="Your Name" class="fw-bold input-style">
+                    </div>
+                    <select name="" id="" style="width: 100%;">
+                        <option value="">Services</option>
+                        <option value="">Relation Problem</option>
+                        <option value="">Couple Counseling</option>
+                        <option value="">Depression Treatment</option>
+                        <option value="">Family Problem</option>
+                        <option value="">Personal Problem</option>
+                        <option value="">Business Problem</option>
+                    </select>
+                </div> -->
+            </div>
+            
+            
+        </div>
+    </section>
+
+
+
     

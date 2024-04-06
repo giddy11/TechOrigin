@@ -1,6 +1,4 @@
-
 body {
-    /* background-image: url("../Assignment-OneA/Material/bg_2.jpg.webp"); */
     margin: 0px !important;
     padding: 0px !important;
 }
@@ -135,7 +133,6 @@ body {
 .ps-12 {
     padding-left: 60px !important;
 }
-
 
 
 /* font size */
@@ -329,8 +326,6 @@ a {
         transition: 0.3s;
     }
 
-    
-
     & .small-circle-4-day {
         color: #589167;
     }
@@ -393,7 +388,6 @@ a {
     .mt-lg-minus6 {
         margin-top: -70px !important;
     }
-
 }
 
 @media (max-width: 992px) {
@@ -422,7 +416,6 @@ a {
         left: 10%;
         width: 80%;
         height: 50%;
-        z-index: 2; /* Ensure the content is above the overlay */
     }
 }
 
@@ -436,16 +429,8 @@ a {
     .div-card-2 {
         & .small-circle-4 {
             left: 44%;
-            bottom: 60px;
-            height: 7rem;
-            width: 7rem;
-            background-color: #f5f4f0;
-            border-radius: 100%;
-            text-align: center;
-            
         }
     }
-    
 }
 
 @media (max-width: 576px) {
@@ -455,11 +440,6 @@ a {
             bottom: 60px;
             height: 7rem;
             width: 7rem;
-            background-color: #f5f4f0;
-            border-radius: 100%;
-            text-align: center;
-            
         }
-    }
-    
+    }   
 }

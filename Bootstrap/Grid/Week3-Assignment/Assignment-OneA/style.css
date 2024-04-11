@@ -3,6 +3,13 @@ body {
     padding: 0px !important;
 }
 
+#counselor {
+    position: sticky !important;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+}
+
 .navbar-collapse {
     flex-grow: 0 !important;
 }
@@ -147,6 +154,12 @@ body {
 a {
     text-decoration: none !important;
     /* color: black; */
+}
+
+.link-hover:hover :active {
+    color: #589167 !important;
+    transition-duration: 0.3s;
+
 }
 
 .play-hover {
@@ -416,6 +429,7 @@ a {
         left: 10%;
         width: 80%;
         height: 50%;
+        z-index: 2; /* Ensure the content is above the overlay */
     }
 }
 

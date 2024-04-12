@@ -1,75 +1,101 @@
-let details = {
-    "problems" : [{
-        "Diabetes" : [{
-            "medications" : [{
-                "medicationsClasses" : [{
-                    "className" : [{
-                        "associatedDrug" : [{
-                            "name" : "asprin",
-                            "dose" : "3 times daily",
-                            "strength" : "500 mg"
-                        }],
-                        "associatedDrug_2" : [{
-                            "name" : "cardiotan",
-                            "dose" : "2 times daily",
-                            "strength" : "200 mg"
-                        }]
-                    }],
-                    "className_2" : [{
-                        "associatedDrug" : [{
-                            "name" : "amlodipine",
-                            "dose" : "once daily",
-                            "strength" : "1000 mg"
-                        }],
-                        "associatedDrug_2" : [{
-                            "name" : "Telmisartan",
-                            "dose" : "",
-                            "strength" : "150 mg"
-                        }]
-                    }]
-                }]
-            }],
-            "labs" : [{
-                "WBC" : 40,
-                "RBC" : 67,
-                "MP" : "+++"
-            }]
-        }],
-        "Asthma" : [
-            {"param_one" : "okay", "param_two" : "not okay"},
-            {"param_one" : "fair", "param_two" : "recheck"},
-        ],
-        "data_one" : [10,40,67,90,54],
-        "data_two" : [23,76,90,54]
-    }]
+// synchronous functions - happens immediately
+// asynchronious functions - happen in the future
+function LogTTDS_Student(name){
+    console.log("====================")
+    console.log(`Hello ${name}`)
+}
+LogTTDS_Student("Joy")
+
+let val = (value)=> console.log(value)
+// setTimeout(()=>LogTTDS_Student("Gideon"),5000)// time is in milliseconds 10-3
+// setTimeout(LogTTDS_Student,10000)
+// setTimeout(val("Gideon"), 6000)
+setTimeout(()=> val("Gideon"), 2000)
+// setTimeout(()=>LogTTDS_Student("Daniel"),5000)// time is in milliseconds 10-3
+console.log("This is the end")
+
+async function asyncFunc(){
+    // Would produce result in the future
+    // Promise - Response JS Async function gives
+    let promise=await jsPromise()
+    console.log(promise*12)
 }
 
-// Locate the data_one and data_two
-let locate_data_one = details.problems[0].data_one
-let locate_data_two = details.problems[0].data_two
+// let asyncAnnFunc=async ()=>{
+//     // Would produce result in the future
+// }
+
+async function jsPromise(){
+    return 4
+}
+setTimeout(()=>asyncFunc(), 10000)
+console.log("The end")
+
+let array_object=[
+    {
+        id:0,
+        name:"TTDS",
+        type:"Software Development"
+    },
+    {
+        id:1,
+        name:"BuildersDeck",
+        type:"Technology Consulting"
+    },
+    {
+        id:2,
+        name:"MyHospitul",
+        type:"Technology Development"
+    },
+    {
+        id:3,
+        name:"BookSeven",
+        type:"Productivity & Utility"
+    }
+]
+
+// console.log("============")
+// item=array_object.find((predicate)=>{
+//     let foundItem=predicate.id==1
+//     return foundItem
+// })
+// console.log(item)
+
+// items=array_object.filter((predicate)=>{
+//     let foundItem=predicate.id>1
+//     return foundItem
+// })
+// console.log(items)
+// console.log("============")
+// items=array_object.filter((predicate)=>predicate.id>1)
+// console.log(items)
+
+//map - Transform a object by going through all the elements & can return a response
+// newArray=array_object.map((_element_)=>{
+//     _element_.id+=1
+//     return _element_
+// })
+// console.log(array_object)
+// console.log(newArray)
+// console.log("============")
+// //forEach -  Transform a object by going through all the elements but without response
+// array_object.forEach((element)=>{
+//     element.id+=1
+// })
+// console.log(array_object)
 
 
-// Merge the data_one and data_two to form a single list
-let merge_data_one_two = locate_data_one.concat(locate_data_two)
-// console.log(`The merged data_one and data_two is ${merge_data_one_two}\n\n`)
+// let map_array = array_object.map((value)=> {
+//     value.id++
+//     return value
+// })
+// console.log(array_object)
+// console.log("=========================")
+// console.log(map_array)
 
-// Raise the RBC value to the power of the min value in the merge_data_one_two variable
-let Locate_RBC_value = details.problems[0].Diabetes[0].labs[0].RBC
-min_num = Math.min(...merge_data_one_two)
+// array_object.forEach((value)=> {
+//     value.name += " hi"
+//     value.type += " ok"
+// })
 
-raised_val = Math.pow(Locate_RBC_value, min_num)
-// console.log(`The RBC value ${Locate_RBC_value} raised to the power of the min value ${min_num} in the merge_data_one_two variable is ${raised_val}\n\n`)
-
-
-// Locate the strength of Cardiotan and Telmisartan
-let locate_strength_cardiotan = details.problems[0].Diabetes[0].medications[0].medicationsClasses[0].className[0].associatedDrug_2[0].strength
-let locate_strength_telmisartan = details.problems[0].Diabetes[0].medications[0].medicationsClasses[0].className_2[0].associatedDrug_2[0].strength
-// console.log(`Strength of Cardiotan is ${locate_strength_cardiotan} and the strength of Telmisartan is ${locate_strength_telmisartan}\n\n`)
-
-
-// Merge className and ClassName_2 to form a single list
-// let locate_className = details.problems[0].Diabetes[0].medications[0].medicationsClasses[0].className[0].associatedDrug[0]
-let locate_className = details.problems[0].Diabetes[0].medications[0].medicationsClasses[0].className
-let locate_className_2 = details.problems[0].Diabetes[0].medications[0].medicationsClasses[0].className_2
-// console.log(`className has ${locate_className} and className_2 has ${locate_className_2}\n\n`)
-let merge_className_1_2 = locate_className.
+// console.log(array_object)

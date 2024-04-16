@@ -18,10 +18,28 @@ const url_3 = "https://httpstat.us/404"
 
 // getFile(url_3);
 
-let getFile = async (url) => {
+// let getFile = async (url) => {
+//     let response = await fetch(url)
+//     .then(content=> content.json())
+//     .then(res=> console.log(res.activity))
+//     .catch(err=> console.log(`ERROR! ${err}`))
+// }
+
+// getFile(url_3);
+let val = (value)=> console.log(value)
+
+
+let getFile = async (url, timeout) => {
+
+    let test = setTimeout(()=> val("timeout"), timeout)
+    
+
+
     let response = await fetch(url)
-    .then(res=> console.log(`You could ${res.data.activity}`))
+    .then(content=> content.json())
+    .then(res=> console.log(res.activity))
     .catch(err=> console.log(`ERROR! ${err}`))
+
 }
 
-getFile(url_3);
+getFile(url_1, 10000);

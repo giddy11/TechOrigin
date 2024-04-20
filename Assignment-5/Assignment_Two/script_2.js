@@ -4,14 +4,6 @@
 ************************************************************************
 */
 
-// function num_rev(num){
-//     let new1 = num.toString()
-//     let num_len = new1.length
-//     for (let i = num_len - 1; i >= 0; i--){
-//         console.log(new1[i])
-//     }
-// }
-
 let number_reverse = (num)=>{
        let rev_num = 0
        while(num > 0){

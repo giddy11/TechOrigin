@@ -8,38 +8,21 @@ const url_1 = "https://www.boredapi.com/api/activity"
 const url_2 = "https://catfact.ninja/fact"
 const url_3 = "https://httpstat.us/404"
 
+function FetchUrl() {
+    let interval = 0;
+    timer = setInterval(async () => {
+        let fet = await fetch(url_2)
+        interval++;
+        console.log(interval);
 
-// let getFile = async (url) => {
-//     let response = await fetch(url)
-//     .then(content=> content.json())
-//     .then(data=> console.log(data))
-//     // .catch(err=> console.log(`ERROR! ${err}`))
-// }
-
-// getFile(url_3);
-
-// let getFile = async (url) => {
-//     let response = await fetch(url)
-//     .then(content=> content.json())
-//     .then(res=> console.log(res.activity))
-//     .catch(err=> console.log(`ERROR! ${err}`))
-// }
-
-// getFile(url_3);
-let val = (value)=> console.log(value)
-
-
-let getFile = async (url, timeout) => {
-
-    let test = setTimeout(()=> val("timeout"), timeout)
-    
-
-
-    let response = await fetch(url)
-    .then(content=> content.json())
-    .then(res=> console.log(res.activity))
-    .catch(err=> console.log(`ERROR! ${err}`))
-
+        if (!fet || !fet.status || fet.status < 200 || fet.status >= 300) {
+            clearInterval(timer)
+            console.log('Timeout or error occurred');
+        } else {
+            clearInterval(timer)
+            console.log('Response received:', fet);
+        }
+    }, 2000);
 }
 
-getFile(url_1, 10000);
+FetchUrl();

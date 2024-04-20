@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p>
+        Write a JavaScript conditional statement to find the largest of five numbers. Display an alert box to show the results.
+        Sample numbers : -5, -2, -6, 0, -1
+        Output : 0
+    </p>
+
+    <button onclick="alert(nums_sort([-5,-2,-6,0,-1]))">Result</button>
+</body>
+
+<script>
+        let nums_sort = (nums)=>{
+        let len = nums.length
+        let count = 0
+        let temp = 0
+        let len_temp = len
+        for(let i = 0; i < len && count < len; count++){
+            for(let j = 0; j < len_temp; j++){
+                if(nums[j+1] < nums[j]){
+                    temp = nums[j+1]
+                    nums[j+1] = nums[j]
+                    nums[j] = temp
+                }
+            }
+            len_temp--
+        }
+
+        return `The highest number is: ${nums[len - 1]}`
+    }
+</script>
+</html>

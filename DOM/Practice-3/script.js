@@ -2,7 +2,7 @@
 
 // let submitBtn = document.getElementById('submitBtn')
 
-// submitBtn.addEventListener('click', SignUp())
+// submitBtn.addEventListener('click', SignUp)
 
 
 

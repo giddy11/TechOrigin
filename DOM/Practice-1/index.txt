@@ -306,6 +306,93 @@
 
 ************************begin*******************************
 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <title>Master DOM Manipulation: Part 1</title>
+</head>
+
+<style>
+    body {
+        background-color: gray;
+        margin: 0;
+        padding: 0;
+    }
+    /* Border format */
+
+    .bg-lightgray {
+        background-color: lightgray;
+    }
+
+    .border-red {
+        border: 2px solid red;
+    }
+
+    .border-green {
+        border: 1px solid green;
+    }
+
+    .border-black {
+        border: 1px solid black;
+    }
+
+    .border-magenta {
+        border: 1px solid darkmagenta;
+    }
+
+    .border-blue {
+        border: 1px solid blue;
+    }
+
+    .border-yellow {
+        border: 3px solid yellow;
+    }
+
+    li {
+        list-style: none;
+        cursor: pointer;
+        
+    }
+
+    .test {
+        padding: 0;
+        display: flex;
+        flex-direction: column;
+        gap: 4px;
+    }
+
+</style>
+<body>
+    <div class="container d-flex align-items-center justify-content-center border-blue" style="height: 100vh;">
+        <div class="div2 text-center py-3 px-2 border-red" style="width: fit-content; height: fit-content;">
+            <!-- <button class="btn border-blue text-white fs-4">Football</button>
+            <button class="btn border-blue text-white fs-4">basketball</button>
+            <button class="btn border-blue text-white fs-4">boxing</button>
+            <button class="btn border-blue text-white fs-4">tennis</button>
+            <button class="btn border-blue text-white fs-4">golf</button> -->
+            <ul id="sports" class="border-green test">
+                <li id="football" class="border-blue fs-4 text-white">Football</li>
+                <li id="basketball" class="border-blue fs-4 text-white">basketball</li>
+                <li id="boxing" class="border-blue fs-4 text-white">boxing</li>
+                <li id="tennis" class="border-blue fs-4 text-white">tennis</li>
+                <li id="golf" class="border-blue fs-4 text-white">golf</li>
+            </ul>
+
+        </div>
+
+        <div class="border-green align-self-end">
+            <button id="add-btn">Add</button>
+        </div>
+
+    </div>
+
+    <script src="app6.js"></script>
+</body>
+</html>
 
 ************************end*******************************
 

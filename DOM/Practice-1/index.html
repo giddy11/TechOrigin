@@ -44,44 +44,31 @@
         border: 3px solid yellow;
     }
 
-    li {
-        list-style: none;
+    .button{
+        font-size: 30px;
+        margin: auto;
+        width: 100%;
+        padding: 10px;
+        border-radius: 10px;
         cursor: pointer;
-        
+        border: solid 3px white;
+        background: none;
+        color: whitesmoke;
+        display: block;
     }
-
-    .test {
-        padding: 0;
-        display: flex;
-        flex-direction: column;
-        gap: 4px;
-    }
-
 </style>
 <body>
-    <div class="container d-flex align-items-center justify-content-center border-blue" style="height: 100vh;">
-        <div class="div2 text-center py-3 px-2 border-red" style="width: fit-content; height: fit-content;">
-            <!-- <button class="btn border-blue text-white fs-4">Football</button>
-            <button class="btn border-blue text-white fs-4">basketball</button>
-            <button class="btn border-blue text-white fs-4">boxing</button>
-            <button class="btn border-blue text-white fs-4">tennis</button>
-            <button class="btn border-blue text-white fs-4">golf</button> -->
-            <ul id="sports" class="border-green test">
-                <li id="football" class="border-blue fs-4 text-white">Football</li>
-                <li id="basketball" class="border-blue fs-4 text-white">basketball</li>
-                <li id="boxing" class="border-blue fs-4 text-white">boxing</li>
-                <li id="tennis" class="border-blue fs-4 text-white">tennis</li>
-                <li id="golf" class="border-blue fs-4 text-white">golf</li>
-            </ul>
-
+    <div class="container d-flex align-items-center justify-content-center border-blue" style="height: 90vh;">
+        <div class="div2 text-center pt-5 px-5 border-red" style="width: fit-content; height: 30vh;">
+            2
+            <div class="div1  pb-5 px-5 flex-column border-green">
+                1
+                <!-- <button>Click</button> -->
+                <a href="" class="button">Click</a>
+            </div>
         </div>
-
-        <div class="border-green align-self-end">
-            <button id="add-btn">Add</button>
-        </div>
-
     </div>
 
-    <script src="app6.js"></script>
+    <script src="app5.js"></script>
 </body>
 </html>

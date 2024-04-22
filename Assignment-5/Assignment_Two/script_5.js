@@ -8,11 +8,6 @@ submitBtn.addEventListener('click', NumSort)
 
 function NumSort(){
     let numbers = document.getElementById('numInput').value
-    let isNumbers = containsOnlyNumbers(numbers)
-
-    if (isNumbers == false)
-        return alert('Should contain only numbers')
-
     let numbers_split = numbers.split(' ')
     let integers = numbers_split.map(str => parseInt(str));
 
@@ -30,11 +25,5 @@ function NumSort(){
         }
         len_temp--
     }
-
     return alert(`The highest number is: ${integers[len - 1]}`)
-}
-
-function containsOnlyNumbers(input) {
-    const regex = /^[-+]?[0-9\s]+$/;
-    return regex.test(input);
 }

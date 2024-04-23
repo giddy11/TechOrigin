@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <title>Document</title>
+</head>
+<body style="background-color: gray;">
+    <div class="grid grid-rows-12 col gap-4">
+        <div class="col-span-7 row-span-1 border-red">
+            <button id="history" class="btn btn-primary">History</button>
+            <button id="history" class="btn btn-primary">Clear</button>
+        </div>
+        <div class="col-span-7 row-span-3 hidden border-red ...">
+            <h3>Date: 23</h3>
+            <span>input</span><br>
+            <span>Result</span>
+            <br>
+            <br>
+            <h1>Date: 23</h1>
+            <span>input</span><br>
+            <span>Result</span>
+            <br>
+            <br>
+            <h1>Date: 23</h1>
+            <span>input</span><br>
+            <span>Result</span>
+        </div>
+        <div class="col-span-7 row-span-1 border-red ...">None</div>
+
+        <div class="col-span-7 row-span-2 border-red ...">
+            <input id="on_input" type="text" class="h-[45px] bg-transparent text-end border-green w-100" value="1+1+3">
+            <br>
+            <div id="result" class="text-6xl text-end border-green font-bold">5</div>
+        </div>
+        <div class="col-span-7 row-span-7 border-red ...">
+            <div class="row">
+                <div class="col">
+                    <button type="button" class="btn btn-dark w-[7rem] h-14">CE</button>
+                </div>
+                <div class="col">
+                    <button type="button" class="btn btn-dark w-[7rem] h-14">C</button>
+                </div>
+                <div class="col">
+                    <button type="button" class="btn btn-dark w-[7rem] h-14"><i class="fa-solid fa-delete-left"></i></button>
+                </div>
+                <div class="col">
+                    <button type="button" class="btn btn-dark w-[7rem] h-14"><i class="fa-solid fa-divide"></i></button>
+                </div>
+                <div class="col">
+                    <button type="button" class="btn btn-dark w-[7rem] h-14">inv</button>
+                </div>
+                <div class="col">
+                    <button type="button" class="btn btn-dark w-[7rem] h-14">Rad</button>
+                </div>
+                <div class="col">
+                    <button type="button" class="btn btn-dark w-[7rem] h-14">Sin</button>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col">
+                    <button type="button" class="btn btn-dark w-[7rem] h-14">7</button>
+                </div>
+                <div class="col">
+                    <button type="button" class="btn btn-dark w-[7rem] h-14">8</button>
+                </div>
+                <div class="col">
+                    <button type="button" class="btn btn-dark w-[7rem] h-14">9</button>
+                </div>
+                <div class="col">
+                    <button type="button" class="btn btn-dark w-[7rem] h-14">X</button>
+                </div>
+                <div class="col">
+                    <button type="button" class="btn btn-dark w-[7rem] h-14">Cos</button>
+                </div>
+                <div class="col">
+                    <button type="button" class="btn btn-dark w-[7rem] h-14">Tan</button>
+                </div>
+                <div class="col">
+                    <button type="button" class="btn btn-dark w-[7rem] h-14">%</button>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col">
+                    <button type="button" class="btn btn-dark w-[7rem] h-14">4</button>
+                </div>
+                <div class="col">
+                    <button type="button" class="btn btn-dark w-[7rem] h-14">5</button>
+                </div>
+                <div class="col">
+                    <button type="button" class="btn btn-dark w-[7rem] h-14">6</button>
+                </div>
+                <div class="col">
+                    <button type="button" class="btn btn-dark w-[7rem] h-14">-</button>
+                </div>
+                <div class="col">
+                    <button type="button" class="btn btn-dark w-[7rem] h-14">In</button>
+                </div>
+                <div class="col">
+                    <button type="button" class="btn btn-dark w-[7rem] h-14">Log</button>
+                </div>
+                <div class="col">
+                    <button type="button" class="btn btn-dark w-[7rem] h-14">!</button>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col">
+                    <button type="button" class="btn btn-dark w-[7rem] h-14">1</button>
+                </div>
+                <div class="col">
+                    <button type="button" class="btn btn-dark w-[7rem] h-14">2</button>
+                </div>
+                <div class="col">
+                    <button type="button" class="btn btn-dark w-[7rem] h-14">3</button>
+                </div>
+                <div class="col">
+                    <button type="button" class="btn btn-dark w-[7rem] h-14">+</button>
+                </div>
+                <div class="col">
+                    <button type="button" class="btn btn-dark w-[7rem] h-14">^</button>
+                </div>
+                <div class="col">
+                    <button type="button" class="btn btn-dark w-[7rem] h-14">PI</button>
+                </div>
+                <div class="col">
+                    <button type="button" class="btn btn-dark w-[7rem] h-14">e</button>
+                </div>
+            </div>
+
+            <div class="row ">
+                <div class="col">
+                    <button type="button" class="btn btn-dark w-[7rem] h-14">.</button>
+                </div>
+                <div class="col">
+                    <button type="button" class="btn btn-dark w-[7rem] h-14">0</button>
+                </div>
+                <div class="col">
+                    <button type="button" class="btn btn-danger w-[14rem] h-14">=</button>
+                </div>
+                
+                <div class="col">
+                    <button type="button" class="btn btn-dark w-[7rem] h-14">(</button>
+                </div>
+                <div class="col">
+                    <button type="button" class="btn btn-dark w-[7rem] h-14">)</button>
+                </div>
+                <div class="col">
+                    <button type="button" class="btn btn-dark w-[7rem] h-14"><i class="fa-solid fa-square-root-variable"></i></button>
+                </div>
+            </div>
+
+        </div>
+
+
+
+        <div>
+        </div>
+        <div>
+        </div>
+        <div>
+        </div>
+        <div>
+        </div>
+        <div>
+        </div>
+        <div>
+        </div>
+        <div>05</div>
+        <div>05</div>
+        <div>05</div>
+        <div>05</div>
+        <div>05</div>
+        <div>05</div>
+    </div>
+</body>
+</html>

@@ -12,16 +12,42 @@
 </head>
 <body style="background-color: gray;">
     <div class="container-fluid px-0 d-flex">
-        <div class="h-[100vh] w-[80%] border-green">
-            <div class="text-white border-yellow">
-                <button class="btn btn-close-white">
-                    <i class="fa-solid fa-bars"></i>
-                </button>
-                <label>Calculator</label>
+        <div class="h-[100vh] md:w-[80%] w-[100%]  border-green">
+            <div class="d-flex justify-between">
+                <div class="text-white border-yellow">
+                    <button class="btn btn-close-white">
+                        <i class="fa-solid fa-bars"></i>
+                    </button>
+                    <label>Calculator</label>
+                </div>
+
+                <div class="text-white border-yellow md:hidden block">
+                    <button class="btn ps-0 btn-close-white">
+                        History
+                    </button>
+                    <div class="text-end hidden  pe-4">
+                        <h3>Date: 23</h3>
+                        <span>input</span><br>
+                        <span>Result</span>
+                        <br>
+                        <br>
+                        <h1>Date: 23</h1>
+                        <span>input</span><br>
+                        <span>Result</span>
+                        <br>
+                        <br>
+                        <h1>Date: 23</h1>
+                        <span>input</span><br>
+                        <span>Result</span>
+                    </div>
+                </div>
             </div>
+            
+
+            
 
             <!-- Input-box with result -->
-            <div class="border-blue">
+            <div class="border-blue hiddenx">
                 <div class="border-red h-[30vh] text-end d-flex flex-column justify-end">
                     <span class="border-red text-6xl">1+2+3+4</span>
                 </div>
@@ -29,7 +55,7 @@
             </div>
 
             <!-- Calculations Symbols -->
-            <div class="grid grid-rows-5 grid-cols-7 border-yellow">
+            <div class="grid grid-rows-5 grid-cols-7 hiddenx border-yellow">
                 <div class="border-red h-[99px]">
                     <button class="border-green w-100 h-100">CE</button>
                 </div>
@@ -136,11 +162,11 @@
         </div>
 
         <!-- History right bar -->
-        <div class="h-[100vh] w-[327px] border-green bg-black text-white">
+        <div class="h-[100vh] w-[327px] border-green md:block hidden bg-black text-white">
             <button class="btn ps-0 btn-close-white">
                 History
             </button>
-            <div class="text-end md:block hidden pe-4">
+            <div class="text-end  pe-4">
                 <h3>Date: 23</h3>
                 <span>input</span><br>
                 <span>Result</span>

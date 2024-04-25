@@ -37,10 +37,6 @@ let multiplyBtnContent = document.getElementById('multiplyBtn').innerText
 // let symbols = ['+', '-', '*', '/'];
 let symbols = [plusBtnContent, minusBtnContent, divideBtnContent,  multiplyBtnContent];
 
-let numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9];
-
-
-
 
 let inputBox = document.getElementById('input-box')
 let inputBoxContent = document.getElementById('input-box').innerText
@@ -201,7 +197,6 @@ ceBtn.addEventListener('click', ()=>{
     let len = inputBoxContent.length
     inputBox.textContent = inputBox.textContent.slice(0, len - 1)
     resultBox.innerText = '0'
-
 })
 
 clearBtn.addEventListener('click', ()=>{

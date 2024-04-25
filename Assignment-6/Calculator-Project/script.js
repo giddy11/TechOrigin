@@ -38,111 +38,121 @@ let multiplyBtnContent = document.getElementById('multiplyBtn').innerText
 let symbols = [plusBtnContent, minusBtnContent, divideBtnContent,  multiplyBtnContent];
 
 
-let inputBox = document.getElementById('input-box')
+// let inputBox = document.getElementById('input-box')
 let inputBoxContent = document.getElementById('input-box').innerText
 
 oneBtn.addEventListener('click', ()=>{
-    let len = inputBox.textContent.length;
+    let inputBox = document.getElementById('input-box')
+    let len = inputBox.textContent.length+1;
 
     if (inputBox.textContent == '0' || (inputBox.textContent[len - 1] == '0'))
-        inputBox.textContent = inputBox.textContent.slice(0, len - 1) + 1;
+        inputBox.textContent = inputBox.textContent.slice(1, len - 1) + 1;
     else
         inputBox.textContent += '1';
 })
 
 twoBtn.addEventListener('click', ()=>{
-    let len = inputBox.textContent.length;
+    let inputBox = document.getElementById('input-box')
+    let len = inputBox.textContent.length+1;
 
     if (inputBox.textContent == '0' || (inputBox.textContent[len - 1] == '0'))
-        inputBox.textContent = inputBox.textContent.slice(0, len - 1) + 2;
+        inputBox.textContent = inputBox.textContent.slice(1, len - 1) + 2;
     else
         inputBox.textContent += '2';
 })
 
 threeBtn.addEventListener('click', ()=>{
-    let len = inputBox.textContent.length;
+    let inputBox = document.getElementById('input-box')
+    let len = inputBox.textContent.length+1;
 
     if (inputBox.textContent == '0' || (inputBox.textContent[len - 1] == '0'))
-        inputBox.textContent = inputBox.textContent.slice(0, len - 1) + 3;
+        inputBox.textContent = inputBox.textContent.slice(1, len - 1) + 3;
     else
         inputBox.textContent += '3';
 })
 
 fourBtn.addEventListener('click', ()=>{
-    let len = inputBox.textContent.length;
+    let inputBox = document.getElementById('input-box')
+    let len = inputBox.textContent.length+1;
 
     if (inputBox.textContent == '0' || (inputBox.textContent[len - 1] == '0'))
-        inputBox.textContent = inputBox.textContent.slice(0, len - 1) + 4;
+        inputBox.textContent = inputBox.textContent.slice(1, len - 1) + 4;
     else
         inputBox.textContent += '4';
 })
 
 fiveBtn.addEventListener('click', ()=>{
-    let len = inputBox.textContent.length;
+    let inputBox = document.getElementById('input-box')
+    let len = inputBox.textContent.length+1;
 
     if (inputBox.textContent == '0' || (inputBox.textContent[len - 1] == '0'))
-        inputBox.textContent = inputBox.textContent.slice(0, len - 1) + 5;
+        inputBox.textContent = inputBox.textContent.slice(1, len - 1) + 5;
     else
         inputBox.textContent += '5';
 })
 
 sixBtn.addEventListener('click', ()=>{
-    let len = inputBox.textContent.length;
+    let inputBox = document.getElementById('input-box')
+    let len = inputBox.textContent.length+1;
 
     if (inputBox.textContent == '0' || (inputBox.textContent[len - 1] == '0'))
-        inputBox.textContent = inputBox.textContent.slice(0, len - 1) + 6;
+        inputBox.textContent = inputBox.textContent.slice(1, len - 1) + 6;
     else
         inputBox.textContent += '6';
 })
 
 sevenBtn.addEventListener('click', ()=>{
-    let len = inputBox.textContent.length;
+    let inputBox = document.getElementById('input-box')
+    let len = inputBox.textContent.length + 1;
+    console.log(len)
 
     if (inputBox.textContent == '0' || (inputBox.textContent[len - 1] == '0'))
-        inputBox.textContent = inputBox.textContent.slice(0, len - 1) + 7;
+        inputBox.textContent = inputBox.textContent.slice(1, len - 1) + 7;
     else
         inputBox.textContent += '7';
 })
 
 eightBtn.addEventListener('click', ()=>{
-    let len = inputBox.textContent.length;
+    let inputBox = document.getElementById('input-box')
+    let len = inputBox.textContent.length+1;
 
     if (inputBox.textContent == '0' || (inputBox.textContent[len - 1] == '0'))
-        inputBox.textContent = inputBox.textContent.slice(0, len - 1) + 9;
+        inputBox.textContent = inputBox.textContent.slice(1, len - 1) + 9;
     else
         inputBox.textContent += '8';
 })
 
 nineBtn.addEventListener('click', ()=>{
-    let len = inputBox.textContent.length;
+    let inputBox = document.getElementById('input-box')
+    let len = inputBox.textContent.length+1;
 
     if (inputBox.textContent == '0' || (inputBox.textContent[len - 1] == '0'))
-        inputBox.textContent = inputBox.textContent.slice(0, len - 1) + 9;
+        inputBox.textContent = inputBox.textContent.slice(1, len - 1) + 9;
     else
         inputBox.textContent += '9';
 
 })
 
 zeroBtn.addEventListener('click', ()=>{
+    let inputBox = document.getElementById('input-box')
     let len = inputBox.textContent.length;
 
     if (inputBox.textContent == '0' || (inputBox.textContent[len - 1] == '0') && (!inputBox.textContent[len - 2] == '.'))
-        inputBox.textContent = inputBox.textContent.slice(0, len - 1) + 0;
+        inputBox.textContent = inputBox.textContent.slice(1, len - 1) + 0;
     else
         inputBox.textContent += '0';
 })
 
 plusBtn.addEventListener('click', () => {
+    let inputBox = document.getElementById('input-box')
     let len = inputBox.textContent.length;
-    let lastChar = inputBox.textContent[len - 1];
+    let input = PrintOperatorToInputBox(inputBox, len, plusBtnContent)
 
-    if (inputBox.textContent == '0' || symbols.includes(lastChar))
-        inputBox.textContent = "0" + inputBox.textContent.slice(0, len - 1) + plusBtnContent;
-    else
-        inputBox.textContent += plusBtnContent;
+    inputBox.textContent = input
 })
 
 dotBtn.addEventListener('click', () => {
+    let inputBox = document.getElementById('input-box')
     let inputText = inputBox.textContent;
 
     let checkIndex = TheIndexOf(inputText, symbols)
@@ -162,55 +172,68 @@ dotBtn.addEventListener('click', () => {
 
 
 minusBtn.addEventListener('click', () => {
+    let inputBox = document.getElementById('input-box')
     let len = inputBox.textContent.length;
-    let lastChar = inputBox.textContent[len - 1];
+    let input = PrintOperatorToInputBox(inputBox, len, minusBtnContent)
 
-    if (inputBox.textContent == '0' || symbols.includes(lastChar))
-        inputBox.textContent = "0" + inputBox.textContent.slice(0, len - 1) + minusBtnContent;
-    else
-        inputBox.textContent += minusBtnContent;
+    inputBox.textContent = input
 })
 
 multiplyBtn.addEventListener('click', () => {
+    let inputBox = document.getElementById('input-box')
     let len = inputBox.textContent.length; 
-    let lastChar = inputBox.textContent[len - 1];
+    let input = PrintOperatorToInputBox(inputBox, len, multiplyBtnContent)
 
-    if (inputBox.textContent == '0' || symbols.includes(lastChar)) 
-        inputBox.textContent = "0" + inputBox.textContent.slice(0, len - 1) + multiplyBtnContent;
-    else
-        inputBox.textContent += multiplyBtnContent;
+    inputBox.textContent = input
 })
 
 divideBtn.addEventListener('click', () => {
+    let inputBox = document.getElementById('input-box')
     let len = inputBox.textContent.length;
-    let lastChar = inputBox.textContent[len - 1];
-    console.log(divideBtnContent)
+    // let lastChar = inputBox.textContent[len - 1];
+    // console.log(divideBtnContent)
 
-    // this handles the case of // or */ or +-
-    if (inputBox.textContent == '0' || symbols.includes(lastChar))
-        inputBox.textContent = "0" + inputBox.textContent.slice(0, len - 1) + divideBtnContent;
-    else
-        inputBox.textContent += divideBtnContent;
+    // // this handles the case of // or */ or +-
+    // if (inputBox.textContent == '0' || symbols.includes(lastChar))
+    //     inputBox.textContent = "0" + inputBox.textContent.slice(1, len - 1) + divideBtnContent;
+    // else
+    //     inputBox.textContent += divideBtnContent;
+
+    let input = PrintOperatorToInputBox(inputBox, len, divideBtnContent)
+
+    inputBox.textContent = input
 })
 
 ceBtn.addEventListener('click', ()=>{
+    let inputBox = document.getElementById('input-box')
     let len = inputBoxContent.length
     inputBox.textContent = inputBox.textContent.slice(0, len - 1)
     resultBox.innerText = '0'
 })
 
 clearBtn.addEventListener('click', ()=>{
+    let inputBox = document.getElementById('input-box')
     console.log(delBtn)
     let len = inputBoxContent.length
     inputBox.textContent = inputBox.textContent.slice(0, len - 1)
 })
 
 delBtn.addEventListener('click', ()=>{
+    let inputBox = document.getElementById('input-box')
     let len = inputBoxContent.length
     inputBox.textContent =  inputBox.textContent.slice(0, len - 2)
 })
 
 // Helper functions
+
+function PrintOperatorToInputBox(inputBox, len, buttonName){
+    let lastChar = inputBox.textContent[len - 1];
+
+    if (inputBox.textContent == '0' || symbols.includes(lastChar))
+        return "0" + inputBox.textContent.slice(1, len - 1) + buttonName;
+    else
+        return inputBox.textContent + buttonName;
+}
 
 function TheIndexOf(expression, operators){
 

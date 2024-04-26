@@ -28,6 +28,16 @@ const tanBtn = document.getElementById('tanBtn')
 const percentBtn = document.getElementById('percentBtn')
 const InBtn = document.getElementById('InBtn')
 const logBtn = document.getElementById('logBtn')
+const historyBtn = document.getElementById('historyBtn')
+
+
+
+let historyDatas = {
+    date :new Date(),
+    input : "",
+    result : ""
+}
+
 
 
 
@@ -387,6 +397,31 @@ radBtn.addEventListener('click', ()=>{
     displayBox.textContent = 'Rad';
 })
 
+equalToBtn.addEventListener('click', ()=>{
+    let inputBox = document.getElementById('input-box')
+    let resultBox = document.getElementById('resultBox')
+    let getOpIndex = TheIndexOf(inputBox.innerText, symbols);
+    let operatorIndex = FindOperator(inputBox.innerText, symbols);
+    let calc_split = [inputBox.textContent.slice(0, getOpIndex), inputBox.textContent.slice(getOpIndex + 1)];
+
+    resultBox.innerText = performOperation(operatorIndex, calc_split)
+    SaveHistory(inputBox.innerText, resultBox.innerText)
+    inputBox.innerText = ""
+})
+
+historyBtn.addEventListener('click', ()=> {
+    let historyData = document.getElementById('history-data')
+    console.log(historyData.textContent)
+
+    if(historyData.classList.contains('hidden')){
+        historyData.classList.remove('hidden')
+    }
+    else {
+        historyData.classList.add('hidden')
+    }
+})
+
+
 
 
 // Helper functions
@@ -400,11 +435,29 @@ function PrintOperatorToInputBox(inputBox, len, buttonName){
         return inputBox.textContent + buttonName;
 }
 
+// this function finds the current index position in the inputbox
 function TheIndexOf(expression, operators){
 
+    console.log(expression)
+
     for (let i = 0; i < operators.length; i++) {
-        if (expression.includes(operators[i]))
+        if (expression.includes(operators[i])){
+            console.log(i)
             return expression.indexOf(operators[i]);
+        }
+    }
+    return -1
+}
+
+//this function finds the current index position in the symbol array list
+function FindOperator(expression, operators){
+
+    console.log(expression)
+
+    for (let i = 0; i < operators.length; i++) {
+        if (expression.includes(operators[i])){
+            return i
+        }
     }
     return -1
 }
@@ -414,4 +467,49 @@ function newExpression(expression){
         expression += "."
 
     return expression
+}
+
+function Add(a,b){
+    return a + b
+}
+
+function Subtract(a,b){
+    return a - b
+}
+
+function Multiply(a,b){
+    return a * b
+}
+
+function Divide(a,b){
+    return a / b
+}
+
+function performOperation(operatorIndex, calc_split) {
+    switch (symbols[operatorIndex]) {
+        case plusBtnContent:
+            return Add(Number(calc_split[0]), Number(calc_split[1]));
+        case minusBtnContent:
+            return Subtract(Number(calc_split[0]), Number(calc_split[1]));
+        case divideBtnContent:
+            return Divide(Number(calc_split[0]), Number(calc_split[1]));
+        case multiplyBtnContent:
+            return Multiply(Number(calc_split[0]), Number(calc_split[1]));
+        default:
+            return 'Try again';
+    }
+}
+
+function SaveHistory(inputbox, resultbox){
+    let historyData = document.getElementById('history-data')
+    let no_history = document.getElementById('no-history')
+
+    no_history.classList.add('hidden')
+
+    historyData.innerHTML += `
+                            <h3>${historyDatas.date.toDateString()}</h3>
+                            <span>${inputbox}</span><br>
+                            <span>${resultbox}</span>
+                            
+                            `
 }

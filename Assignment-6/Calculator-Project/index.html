@@ -52,9 +52,9 @@
                     <div class="border-red h-[32vh] text-end d-flex flex-column justify-end">
                         <span id="input-box" class="border-red text-6xl" >0</span>
                     </div>
-                    <div id="resultBox" class="text-end flex-grow-0 d-flex justify-between text-6xl border-green font-bold">
+                    <div id="" class="text-end flex-grow-0 d-flex justify-between text-6xl border-green font-bold">
                         <div id="display-box" class="">Deg</div>
-                        <span>7</span>
+                        <span id="resultBox">0</span>
                     </div>
                 </div>
     
@@ -167,11 +167,12 @@
     
             <!-- History right bar -->
             <div class="h-[100vh] w-[480px] border-green md:block hidden bg-black text-white">
-                <button class="btn ps-0 btn-close-white">
+                <button id="historyBtn" class="btn ps-0 btn-close-white">
                     History
                 </button>
-                <div class="text-end  pe-4">
-                    <h3>Date: 23</h3>
+                <div id="history-data" class="text-end pe-4">
+                    <div id="no-history" class="">No history</div>
+                    <!-- <h3>Date: 23</h3>
                     <span>input</span><br>
                     <span>Result</span>
                     <br>
@@ -183,7 +184,7 @@
                     <br>
                     <h1>Date: 23</h1>
                     <span>input</span><br>
-                    <span>Result</span>
+                    <span>Result</span> -->
                 </div>
             </div>
         </div>

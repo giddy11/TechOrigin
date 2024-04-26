@@ -20,10 +20,24 @@ const exponentBtn = document.getElementById('exponentBtn')
 const piBtn = document.getElementById('piBtn')
 const raiseToPowBtn = document.getElementById('raiseToPowBtn')
 const factorialBtn = document.getElementById('factorialBtn')
+const inBtn = document.getElementById('inBtn')
+const radBtn = document.getElementById('radBtn')
+const sinBtn = document.getElementById('sinBtn')
+const cosBtn = document.getElementById('cosBtn')
+const tanBtn = document.getElementById('tanBtn')
+const percentBtn = document.getElementById('percentBtn')
+const InBtn = document.getElementById('InBtn')
+const logBtn = document.getElementById('logBtn')
+
+
+
 const delBtn = document.getElementById('delBtn')
 const ceBtn = document.getElementById('ceBtn')
 const clearBtn = document.getElementById('clearBtn')
+
+
 const resultBox = document.getElementById('resultBox')
+const displayBox = document.getElementById('display-box')
 
 
 
@@ -33,6 +47,9 @@ let plusBtnContent = document.getElementById('plusBtn').innerText
 let minusBtnContent = document.getElementById('minusBtn').innerText
 let divideBtnContent = document.getElementById('divideBtn').innerText
 let multiplyBtnContent = document.getElementById('multiplyBtn').innerText
+let sqrtRootBtnContent = document.getElementById('sqrtRootBtn').innerText
+let piBtnContent = document.getElementById('piBtn').innerText
+
 
 // let symbols = ['+', '-', '*', '/'];
 let symbols = [plusBtnContent, minusBtnContent, divideBtnContent,  multiplyBtnContent];
@@ -223,6 +240,154 @@ delBtn.addEventListener('click', ()=>{
     let len = inputBoxContent.length
     inputBox.textContent =  inputBox.textContent.slice(0, len - 2)
 })
+
+openBracketBtn.addEventListener('click', ()=>{
+    let inputBox = document.getElementById('input-box')
+    let len = inputBox.textContent.length;
+
+    if (inputBox.textContent == '(' || (inputBox.textContent[len - 1] == '0'))
+        inputBox.textContent = inputBox.textContent.slice(1, len - 1) + '(';
+    else
+        inputBox.textContent += '(';
+})
+
+closeBracketBtn.addEventListener('click', ()=>{
+    let inputBox = document.getElementById('input-box')
+    let len = inputBox.textContent.length;
+
+    if (inputBox.textContent == ')' || (inputBox.textContent[len - 1] == '0'))
+        inputBox.textContent = inputBox.textContent.slice(1, len - 1) + ')';
+    else
+        inputBox.textContent += ')';
+})
+
+sqrtRootBtn.addEventListener('click', ()=>{
+    let inputBox = document.getElementById('input-box')
+    let len = inputBox.textContent.length;
+
+    if (inputBox.textContent == '0' || (inputBox.textContent[len - 1] == '0'))
+        inputBox.textContent = inputBox.textContent.slice(1, len - 1) + sqrtRootBtnContent;
+    else
+        inputBox.textContent += sqrtRootBtnContent;
+})
+
+exponentBtn.addEventListener('click', ()=>{
+    let inputBox = document.getElementById('input-box')
+    let len = inputBox.textContent.length;
+
+    if (inputBox.textContent == '0' || (inputBox.textContent[len - 1] == '0'))
+        inputBox.textContent = inputBox.textContent.slice(1, len - 1) + 'e';
+    else
+        inputBox.textContent += 'e';
+})
+
+piBtn.addEventListener('click', ()=>{
+    let inputBox = document.getElementById('input-box')
+    let len = inputBox.textContent.length;
+
+    if (inputBox.textContent == '0' || (inputBox.textContent[len - 1] == '0'))
+        inputBox.textContent = inputBox.textContent.slice(1, len - 1) + piBtnContent;
+    else
+        inputBox.textContent += piBtnContent;
+})
+
+raiseToPowBtn.addEventListener('click', ()=>{
+    let inputBox = document.getElementById('input-box')
+    let len = inputBox.textContent.length;
+
+    if (inputBox.textContent == '0' || (inputBox.textContent[len - 1] == '0'))
+        inputBox.textContent = inputBox.textContent.slice(1, len - 1) + '^';
+    else
+        inputBox.textContent += '^';
+})
+
+factorialBtn.addEventListener('click', ()=>{
+    let inputBox = document.getElementById('input-box')
+    let len = inputBox.textContent.length;
+
+    if (inputBox.textContent == '0' || (inputBox.textContent[len - 1] == '0'))
+        inputBox.textContent = inputBox.textContent.slice(1, len - 1) + '!';
+    else
+        inputBox.textContent += '!';
+})
+
+logBtn.addEventListener('click', ()=>{
+    let inputBox = document.getElementById('input-box')
+    let len = inputBox.textContent.length;
+
+    if (inputBox.textContent == '0' || (inputBox.textContent[len - 1] == '0'))
+        inputBox.textContent = inputBox.textContent.slice(1, len - 1) + 'Log';
+    else
+        inputBox.textContent += 'Log';
+})
+
+inBtn.addEventListener('click', ()=>{
+    let inputBox = document.getElementById('input-box')
+    let len = inputBox.textContent.length;
+
+    if (inputBox.textContent == '0' || (inputBox.textContent[len - 1] == '0'))
+        inputBox.textContent = inputBox.textContent.slice(1, len - 1) + 'in';
+    else
+        inputBox.textContent += 'in';
+})
+
+InBtn.addEventListener('click', ()=>{
+    let inputBox = document.getElementById('input-box')
+    let len = inputBox.textContent.length;
+
+    if (inputBox.textContent == '0' || (inputBox.textContent[len - 1] == '0'))
+        inputBox.textContent = inputBox.textContent.slice(1, len - 1) + 'In';
+    else
+        inputBox.textContent += 'In';
+})
+
+percentBtn.addEventListener('click', ()=>{
+    let inputBox = document.getElementById('input-box')
+    let len = inputBox.textContent.length;
+
+    if (inputBox.textContent == '0' || (inputBox.textContent[len - 1] == '0'))
+        inputBox.textContent = inputBox.textContent.slice(1, len - 1) + '%';
+    else
+        inputBox.textContent += '%';
+})
+
+tanBtn.addEventListener('click', ()=>{
+    let inputBox = document.getElementById('input-box')
+    let len = inputBox.textContent.length;
+
+    if (inputBox.textContent == '0' || (inputBox.textContent[len - 1] == '0'))
+        inputBox.textContent = inputBox.textContent.slice(1, len - 1) + 'Tan';
+    else
+        inputBox.textContent += 'Tan';
+})
+
+cosBtn.addEventListener('click', ()=>{
+    let inputBox = document.getElementById('input-box')
+    let len = inputBox.textContent.length;
+
+    if (inputBox.textContent == '0' || (inputBox.textContent[len - 1] == '0'))
+        inputBox.textContent = inputBox.textContent.slice(1, len - 1) + 'Cos';
+    else
+        inputBox.textContent += 'Cos';
+})
+
+sinBtn.addEventListener('click', ()=>{
+    let inputBox = document.getElementById('input-box')
+    let len = inputBox.textContent.length;
+
+    if (inputBox.textContent == '0' || (inputBox.textContent[len - 1] == '0'))
+        inputBox.textContent = inputBox.textContent.slice(1, len - 1) + 'Sin';
+    else
+        inputBox.textContent += 'Sin';
+})
+
+radBtn.addEventListener('click', ()=>{
+    let displayBox = document.getElementById('display-box')
+
+    displayBox.textContent = 'Rad';
+})
+
+
 
 // Helper functions
 

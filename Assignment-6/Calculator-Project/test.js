@@ -1,9 +1,25 @@
-let word = 'helll';
-let len = word.length;
+let symbols = ['+', '-', '/',  '*'];
+let calc = '45+67';
 
-if (word[len - 1] == 'l'){
-    console.log(1);
-    word = word.slice(0, len - 1) + '';
+let getOpIndex = TheIndexOf(calc, symbols);
+console.log(getOpIndex);
+
+let calc_split = [calc.slice(0, getOpIndex), calc.slice(getOpIndex + 1)];
+
+console.log(calc_split);
+
+let equal = Add(Number(calc_split[0]), Number(calc_split[1]));
+
+console.log(equal);
+
+function TheIndexOf(expression, operators){
+    for (let i = 0; i < operators.length; i++) {
+        if (expression.includes(operators[i]))
+            return expression.indexOf(operators[i]);
+    }
+    return -1;
 }
 
-console.log(word);
+function Add(a,b){
+    return a + b;
+}

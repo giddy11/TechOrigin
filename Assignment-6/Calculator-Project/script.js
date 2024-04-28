@@ -150,6 +150,31 @@ let DisplayHistory = ()=>{
     }
 }
 
+let DisplayHistory2 = ()=>{
+    let historyData = document.getElementById('history-data2')
+    let input_box = document.getElementById('input-box2')
+    let calculator_logo = document.getElementById('calculator-logo')
+    let calculation_section = document.getElementById('calculation-section')
+
+
+    console.log(historyData.textContent)
+
+    if(historyData.classList.contains('hidden')){
+        historyData.classList.remove('hidden')
+        input_box.classList.add('hidden')
+        calculator_logo.classList.add('hidden')
+        calculation_section.classList.add('hidden')
+
+    }
+    else {
+        historyData.classList.add('hidden')
+        input_box.classList.remove('hidden')
+        calculator_logo.classList.remove('hidden')
+        calculation_section.classList.remove('hidden')
+
+    }
+}
+
 // Helper functions
 
 function PrintOperatorToInputBox(inputBox, len, buttonName){
@@ -228,11 +253,20 @@ function performOperation(operatorIndex, calc_split) {
 
 function SaveHistory(inputbox, resultbox){
     let historyData = document.getElementById('history-data')
+    let historyData2 = document.getElementById('history-data2')
+
     let no_history = document.getElementById('no-history')
 
     no_history.classList.add('hidden')
 
     historyData.innerHTML += `
+                            <h3>${historyDatas.date.toDateString()}</h3>
+                            <span>${inputbox}</span><br>
+                            <span>${resultbox}</span>
+                            
+                            `
+
+    historyData2.innerHTML += `
                             <h3>${historyDatas.date.toDateString()}</h3>
                             <span>${inputbox}</span><br>
                             <span>${resultbox}</span>

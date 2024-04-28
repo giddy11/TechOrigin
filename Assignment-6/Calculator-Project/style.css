@@ -28,7 +28,13 @@
     border: 3px solid yellow;
 }
 
-.change-scrollbar-bg::-webkit-scrollbar {
-    width: 0; /* Set width to 0 */
-    background-color: transparent; /* Set background color to transparent */
+#history-data, #history-data2 {
+    overflow-y: auto;
+    max-height: 95vh;
+    border: 1px solid #ccc;
+    padding: 10px;
+}
+
+#history-data::-webkit-scrollbar {
+    background-color: transparent;
 }

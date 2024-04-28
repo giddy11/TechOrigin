@@ -1,25 +1,39 @@
-import logo from './logo.svg';
-import './App.css';
+import { useState } from "react"
+import "../src/style.css"
 
-function App() {
+
+export default function App() {
+  //learn about state befor you continue this section
+  const { newItem, setNewItem } = useState("")
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+    <>
+    <form className="new-item-form border-yellow">
+      <div className="form-row">
+        <label htmlFor="item">New Item</label>
+        <input type="text" id="item"/>
+      </div>
+      <button className="btn">Add</button>
+    </form>
+    <h1 className="header">Todo List</h1>
+    <ul className="list border-yellow">
+      <li>
+        <label>
+          <input type="checkbox"/>
+          Item 1
+        </label>
+        <button className="btn btn-danger">Delete</button>
+      </li>
+
+      <li>
+        <label>
+          <input type="checkbox"/>
+          Item 1
+        </label>
+        <button className="btn btn-danger">Delete</button>
+      </li>
+    </ul>
+    </>
+    
+  )
 }
 
-export default App;

@@ -7,17 +7,16 @@ import MovieCard from "./MovieCard";
 
 const API_URL = 'https://www.omdbapi.com/?apikey=d88aee9e';
 
-// const movie1 = {
-//   "Title": "Girl Undefined",
-//   "Year": "2019",
-//   "imdbID": "tt11758836",
-//   "Type": "movie",
-//   "Poster": "N/A"
-// }
+const movie1 = {
+  "Title": "Girl Undefined",
+  "Year": "2019",
+  "imdbID": "tt11758836",
+  "Type": "movie",
+  "Poster": "N/A"
+}
 
 const App=()=> {
     const [movies, setMovies] = useState([])
-    const [searchTerm, setSearchTerm] = useState('')
 
     const searchMovies = async (title)=> {
         const response = await fetch(`${API_URL}&s=${title}`)
@@ -27,7 +26,7 @@ const App=()=> {
         setMovies(data.Search)
     }
     useEffect(()=> {
-        searchMovies('Spiderman')
+        searchMovies('Girl Undefined')
     }, []);
 
     return (
@@ -36,22 +35,20 @@ const App=()=> {
 
             <div className="search">
                 <input 
-                    placeholder="Search for movies" value={searchTerm} 
-                    onChange={(e)=> setSearchTerm(e.target.value)}
+                    placeholder="Search for movies" value="Superman" 
+                    onChange={()=> {}}
                 />
                 <img 
                     src={SearchIcon} 
                     alt="search" 
-                    onClick={()=> searchMovies(searchTerm)} />
+                    onChange={()=> {}}/>
             </div>
 
             {
                 movies?.length > 0
                 ? (
                     <div className="container border-red">
-                        {movies.map((movie) => (
-                            <MovieCard movie={movie} />
-                        ))}
+                        <MovieCard movie1={movie1} />
                     </div>
                 ) : (
                     <div className="empty">
